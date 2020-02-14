@@ -1,0 +1,17 @@
+<h2>Design your ship :</h2>
+
+<div *ngFor="let slot of slots_DD40; let i=index">
+  <a>{{ slot.name }}</a>
+  <br>
+  <select name="hull" id="hull-select">
+    <option *ngFor="let equipment of equipBySlot[i]" value=product.name>{{ equipment.name }}</option>
+  </select>
+  <br>
+  <br>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
