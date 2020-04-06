@@ -10,8 +10,21 @@ import { hulls } from '../database';
 export class TopBarComponent implements OnInit {
 
   hulls = hulls;
+  value;
+  hullnum = [];
 
-  constructor() { }
+  constructor() { 
+
+    for(var val1 of this.hulls){
+      this.hullnum.push("window.location.href = 'https://github-6eoaag.stackblitz.io/?x=" + hulls.indexOf(val1) + "';")
+    }
+
+  }
+
+  public goToUrl(i:number): void {
+    console.log(i);
+    window.location.href = "https://github-6eoaag.stackblitz.io/?x=" + i;
+  }
 
   ngOnInit() {
   }

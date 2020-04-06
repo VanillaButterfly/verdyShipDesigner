@@ -1,8 +1,8 @@
-<select name="hull" id="hull-select">
-      <option *ngFor="let hull of hulls" value=product.name>{{ hull.name }}</option>
-</select>
+<div *ngFor="let hull of hulls; let i=index">
 
-<a class="button fancy-button">This button has no effect</a>
+<button type="button" (click)="goToUrl(i)">{{ hull.name }}</button>
+
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

@@ -1,14 +1,24 @@
 <h2>Design your ship :</h2>
 
-<div *ngFor="let slot of slots_DD40; let i=index">
+<div *ngFor="let slot of slotByHull[index]; let i=index">
   <a>{{ slot.name }}</a>
+
   <br>
-  <select name="hull" id="hull-select">
-    <option *ngFor="let equipment of equipBySlot[i]" value=product.name>{{ equipment.name }}</option>
+
+  <select #equipselect name="hull" id="equipselect" (change)="selector(equipselect.value, i)">
+    <option *ngFor="let equipment of equipBySlotByHull[index][i]" value={{equipment.id}}>{{ equipment.name }}</option>
   </select>
+
   <br>
   <br>
+
 </div>
+
+<div *ngFor="let stat of statsname; let j=index">
+  <label>{{stat}}</label>
+  <label>{{statslist[statsid[j]]}}</label><br>
+</div>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
