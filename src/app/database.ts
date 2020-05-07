@@ -901,13 +901,13 @@ export const slots = [
   {
     name: 'Anti-Air',
     id: 'aa',
-    categories: ['all','anti_air'],
+    categories: ['all','ship_anti_air'],
     description: 'This place is specifically reserved for very smol guns. Even if you put one, you will still need a bigger gun, because smol guns are too cute to count towards the treaties'
   },
   {
     name: 'Anti-Air',
     id: 'mandaa',
-    categories: ['anti_air']
+    categories: ['ship_anti_air']
   },
   {
     name: 'Fire Control System',
@@ -2961,6 +2961,476 @@ export const stats = [
   },
 ];
 
+export const designers = [
+  {
+	name : 'no designer',
+  },
+  {
+    name : 'Pacific fleet naval manufacturer',
+    naval_range : [
+	  ['per', 0.25, 'CV'],
+	  ['per', 0.25, 'BB'],
+	  ['per', 0.25, 'BC'],
+	  ['per', 0.25, 'CA'],
+	  ['per', 0.25, 'CL'],
+	  ['per', 0.25, 'DD'],
+	  ['per', 0.25, 'SS']
+    ],
+    carrier_size : [
+      ['per', 0.25, 'CV']
+    ],
+    armor_value : [
+	  ['per', -0.15, 'CV']
+    ]
+  },
+  {
+    name : 'Atlantic fleet naval manufacturer',
+    armor_value : [
+	  ['per', 0.5, 'CV'],
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ],
+    max_strength : [
+      ['per', 0.1, 'CV']
+    ],
+    hg_attack : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ]
+  },
+  {
+    name : 'Battlefleet designer',
+    armor_value : [
+	  ['per', 0.15, 'BB'],
+	  ['per', 0.15, 'BC'],
+	  ['per', 0.15, 'CA']
+    ],
+    hg_attack : [
+	  ['per', 0.15, 'BB'],
+	  ['per', 0.15, 'BC'],
+	  ['per', 0.15, 'CA']
+    ],
+    torpedo_attack : [
+	  ['per', 0.25, 'CL'],
+	  ['per', 0.25, 'DD']
+    ],
+    sub_detection : [
+	  ['per', -0.25, 'CL'],
+	  ['per', -0.25, 'DD']
+    ]
+  },
+  {
+    name : 'Raiding fleet naval manufacturer',
+    surface_visibility : [
+	  ['per', -0.1, 'CV'],
+	  ['per', -0.1, 'BB'],
+	  ['per', -0.1, 'BC'],
+	  ['per', -0.1, 'CA'],
+	  ['per', -0.1, 'CL'],
+	  ['per', -0.1, 'DD'],
+	  ['per', -0.1, 'SS']
+    ],
+    naval_speed : [
+      ['per', 0.1, 'CV'],
+      ['per', 0.1, 'BB'],
+      ['per', 0.1, 'BC'],
+      ['per', 0.1, 'CA'],
+      ['per', 0.1, 'CL'],
+      ['per', 0.1, 'DD'],
+      ['per', 0.1, 'SS']
+    ],
+    carrier_size : [
+	  ['per', -0.1, 'CV']
+    ],
+    hg_attack : [
+	  ['per', -0.1, 'BB'],
+	  ['per', -0.1, 'BC'],
+	  ['per', -0.1, 'CA']
+    ],
+    sub_visibility : [
+	  ['per', -0.1, 'SS']
+    ]
+  },
+  {
+    name : 'Convoy escort fleet naval manufacturer',
+    build_cost_ic : [
+      ['per', 0.1, 'CL'],
+      ['per', 0.1, 'DD']
+    ],
+    naval_range : [
+	  ['per', 0.3, 'CL'],
+	  ['per', 0.3, 'DD']
+    ],
+    naval_speed : [
+	  ['per', 0.1, 'CL'],
+	  ['per', 0.1, 'DD']
+    ],
+    sub_detection : [
+	  ['per', 0.1, 'CL'],
+	  ['per', 0.1, 'DD']
+    ]
+  },
+  {
+    name : 'Coastal defence fleet naval manufacturer',
+    build_cost_ic : [
+	  ['per', -0.25, 'CV'],
+	  ['per', -0.25, 'BB'],
+	  ['per', -0.25, 'BC'],
+	  ['per', -0.25, 'CA'],
+	  ['per', -0.25, 'CL'],
+	  ['per', -0.25, 'DD'],
+	  ['per', -0.25, 'SS']
+    ],
+    naval_range : [
+      ['per', -0.5, 'CV'],
+      ['per', -0.5, 'BB'],
+      ['per', -0.5, 'BC'],
+      ['per', -0.5, 'CA'],
+      ['per', -0.5, 'CL'],
+      ['per', -0.5, 'DD'],
+      ['per', -0.5, 'SS']
+    ],
+    carrier_size : [
+	  ['per', -0.2, 'CV']
+    ],
+    hg_attack : [
+	  ['per', -0.2, 'BB'],
+	  ['per', -0.2, 'BC'],
+	  ['per', -0.2, 'CA']
+    ],
+    armor_value : [
+	  ['per', -0.2, 'BB'],
+	  ['per', -0.2, 'BC'],
+	  ['per', -0.2, 'CA']
+    ]
+  },
+  {
+    name : 'Mediterranean fleet naval manufacturer',
+    naval_range : [
+	  ['per', -0.25, 'BB'],
+	  ['per', -0.25, 'BC'],
+	  ['per', -0.25, 'CA'],
+	  ['per', -0.25, 'CL'],
+	  ['per', -0.25, 'DD']
+    ],
+    naval_speed : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA'],
+	  ['per', 0.1, 'CL'],
+	  ['per', 0.1, 'DD']
+    ]
+  }
+];
+
+export const doctrines = [
+  {
+    name : 'No Doctrine'
+  },
+  {
+    name : 'Fleet in Being',
+    max_organisation : [
+      ['add', 30, 'CV'],
+      ['add', 60, 'BB'],
+      ['add', 40, 'BC'],
+      ['add', 40, 'CA'],
+      ['add', 20, 'CL'],
+      ['add', 60, 'DD'],
+	  ['add', 40, 'SS']
+    ],
+    surface_detection : [
+	  ['per', 0.1, 'CL'],
+	  ['per', 0.1, 'DD'],
+	  ['per', 0.25, 'SS']
+    ],
+    sub_detection : [
+      ['per', 0.5, 'CV'],
+      ['per', 0.35, 'CL'],
+      ['per', 0.3, 'DD']
+    ],
+    armor_value : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ],
+    hg_attack : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ],
+    anti_air_attack : [
+	  ['per', 0.1, 'CV'],
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA'],
+	  ['per', 0.1, 'CL'],
+	  ['per', 0.1, 'DD']
+    ]
+  },
+  {
+    name : 'Trade Interdiction',
+    max_organisation : [
+      ['add', 60, 'CV'],
+      ['add', 50, 'BB'],
+      ['add', 40, 'BC'],
+      ['add', 40, 'CA'],
+      ['add', 30, 'CL'],
+      ['add', 10, 'DD'],
+	  ['add', 50, 'SS']
+    ],
+    surface_detection : [
+	  ['per', 0.25, 'BB'],
+	  ['per', 0.4, 'BC'],
+	  ['per', 0.3, 'CA'],
+	  ['per', 0.3, 'CL'],
+	  ['per', 0.5, 'SS']
+    ],
+    sub_detection : [
+      ['per', 0.05, 'DD']
+    ],
+    surface_visibility : [
+	  ['per', -0.25, 'BB'],
+	  ['per', -0.2, 'BC'],
+	  ['per', -0.1, 'CL']
+    ],
+    armor_value : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ],
+    torpedo_attack : [
+	  ['per', 0.1, 'SS']
+    ],
+    max_strength : [
+	  ['per', 0.2, 'SS']
+    ]
+  },
+  {
+    name : 'Base Strike',
+    max_organisation : [
+      ['add', 120, 'CV'],
+      ['add', 20, 'BB'],
+      ['add', 60, 'CL'],
+	  ['add', 50, 'DD'],
+	  ['add', 40, 'SS']
+    ],
+    surface_detection : [
+      ['per', 0.25, 'CL'],
+	  ['per', 0.25, 'SS']
+    ],
+    sub_detection : [
+      ['per', 0.25, 'DD']
+    ],
+    armor_value : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.1, 'CA']
+    ]
+  }
+];
+
+export const classes = [
+  {
+    name : 'CV',
+    hull : ['Converted Cruiser Hull','Converted Battleship Hull','1936 Carrier Hull','1940 Carrier Hull','1944 Carrier Hull'],
+    condition : [],
+    exclusion : [],
+  },
+  {
+    name : 'BB',
+    hull : ['Pre-Dreadnought Hull','Early Heavy Ship Hull','1936 Heavy Ship Hull','1940 Heavy Ship Hull','1944 Heavy Ship Hull','Super Heavy Battleship Hull'],
+    condition : [],
+    exclusion : ['Battlecruiser Armor I','Battlecruiser Armor II','Battlecruiser Armor III'],
+  },
+  {
+    name : 'BC',
+    hull : ['Pre-Dreadnought Hull','Early Heavy Ship Hull','1936 Heavy Ship Hull','1940 Heavy Ship Hull','1944 Heavy Ship Hull'],
+    condition : ['Battlecruiser Armor I','Battlecruiser Armor II','Battlecruiser Armor III'],
+    exclusion : [],
+  },
+  {
+    name : 'CA',
+    hull : ['Coastal Defense Ship','Early Cruiser Hull','1936 Cruiser Hull','1940 Cruiser Hull','1944 Cruiser Hull','Torpedo Cruiser','Panzerschiff'],
+    condition : ['Heavy Battery I','Heavy Battery II','Heavy Battery III','Heavy Battery IV','Heavy Cruiser Battery I','Heavy Cruiser Battery II','Heavy Cruiser Battery III','Heavy Cruiser Battery IV'],
+    exclusion : [],
+  },
+  {
+    name : 'CL',
+    hull : ['Coastal Defense Ship','Early Cruiser Hull','1936 Cruiser Hull','1940 Cruiser Hull','1944 Cruiser Hull','Torpedo Cruiser'],
+    condition : [],
+    exclusion : ['Heavy Battery I','Heavy Battery II','Heavy Battery III','Heavy Battery IV','Heavy Cruiser Battery I','Heavy Cruiser Battery II','Heavy Cruiser Battery III','Heavy Cruiser Battery IV'],
+  },
+  {
+    name : 'DD',
+    hull : ['Early Destroyer Hull','1936 Destroyer Hull','1940 Destroyer Hull','1944 Destroyer Hull'],
+    condition : [],
+    exclusion : [],
+  },
+  {
+    name : 'SS',
+    hull : ['Early Submarine Hull','1936 Submarine Hull','1940 Submarine Hull','1944 Submarine Hull','Cruiser Submarine'],
+    condition : [],
+    exclusion : [],
+  }
+];
+
+export const techs = [
+  {
+    name : 'magnetic_detonator',
+    torpedo_attack : [
+	  ['per', 0.2, 'CA'],
+	  ['per', 0.2, 'CL'],
+	  ['per', 0.2, 'DD'],
+	  ['per', 0.2, 'SS']
+    ]
+  },
+  {
+    name : 'homing_torpedo',
+    torpedo_attack : [
+	  ['per', 0.2, 'CA'],
+	  ['per', 0.2, 'CL'],
+	  ['per', 0.2, 'DD'],
+	  ['per', 0.2, 'SS']
+    ]
+  },
+  {
+    name : 'basic_light_shell',
+    lg_attack : [
+	  ['per', 0.05, 'CV'],
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC'],
+	  ['per', 0.05, 'CA'],
+	  ['per', 0.05, 'CL'],
+	  ['per', 0.05, 'DD']
+    ],
+    lg_armor_piercing : [
+	  ['per', 0.05, 'CV'],
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC'],
+	  ['per', 0.05, 'CA'],
+	  ['per', 0.05, 'CL'],
+	  ['per', 0.05, 'DD']
+    ]
+  },
+  {
+    name : 'improved_light_shell',
+    lg_attack : [
+	  ['per', 0.05, 'CV'],
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC'],
+	  ['per', 0.05, 'CA'],
+	  ['per', 0.05, 'CL'],
+	  ['per', 0.05, 'DD']
+    ],
+    lg_armor_piercing : [
+	  ['per', 0.05, 'CV'],
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC'],
+	  ['per', 0.05, 'CA'],
+	  ['per', 0.05, 'CL'],
+	  ['per', 0.05, 'DD']
+    ]
+  },
+  {
+    name : 'basic_medium_shell',
+    lg_attack : [
+	  ['per', 0.05, 'CL']
+    ],
+    lg_armor_piercing : [
+	  ['per', 0.05, 'CL']
+    ],
+    hg_attack : [
+	  ['per', 0.05, 'CA']
+    ],
+    hg_armor_piercing : [
+	  ['per', 0.05, 'CA']
+    ]
+  },
+  {
+    name : 'improved_medium_shell',
+    lg_attack : [
+	  ['per', 0.05, 'CL']
+    ],
+    lg_armor_piercing : [
+	  ['per', 0.05, 'CL']
+    ],
+    hg_attack : [
+	  ['per', 0.05, 'CA']
+    ],
+    hg_armor_piercing : [
+	  ['per', 0.05, 'CA']
+    ]
+  },
+  {
+    name : 'basic_heavy_shell',
+    hg_attack : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ],
+    hg_armor_piercing : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ]
+  },
+  {
+    name : 'improved_heavy_shell',
+    hg_attack : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ],
+    hg_armor_piercing : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ]
+  },
+  {
+    name : 'bracket_shooting',
+    lg_attack : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ],
+    hg_attack : [
+	  ['per', 0.05, 'BB'],
+	  ['per', 0.05, 'BC']
+    ]
+  },
+  {
+    name : 'ladder_shooting',
+    lg_attack : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.05, 'CA']
+    ],
+    hg_attack : [
+	  ['per', 0.1, 'BB'],
+	  ['per', 0.1, 'BC'],
+	  ['per', 0.05, 'CA']
+    ]
+  },
+  {
+    name : 'shell_dyes',
+    lg_attack : [
+	  ['per', 0.15, 'BB'],
+	  ['per', 0.15, 'BC'],
+	  ['per', 0.1, 'CA'],
+	  ['per', 0.05, 'CL'],
+	  ['per', 0.05, 'DD']
+    ],
+    hg_attack : [
+	  ['per', 0.15, 'BB'],
+	  ['per', 0.15, 'BC'],
+	  ['per', 0.1, 'CA']
+    ]
+  },
+  {
+    name : 'improved_submarine_mine_laying',
+    mines_planting : [
+	  ['add', 0.2, 'SS']
+    ]
+  }
+];
 
 /*
 Copyright Google LLC. All Rights Reserved.

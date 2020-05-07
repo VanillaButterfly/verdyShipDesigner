@@ -14,6 +14,35 @@
 
 </div>
 
+<br>
+
+<div>
+<select #doctselect name="hull" id="doctselect" (change)="doctselector(doctselect.value)">
+  <option value='No Doctrine'>"No Doctrine"</option>
+  <option value='Fleet in Being'>"Fleet in Being"</option>
+  <option value='Trade Interdiction'>"Trade Interdiction"</option>
+  <option value='Base Strike'>"Base Strike"</option>
+</select>
+</div>
+
+<br>
+
+<div>
+<select #desiselect name="hull" id="desiselect" (change)="desiselector(desiselect.value)">
+  <option value='No Designer'>"No Designer"</option>
+  <option value='Pacific fleet naval manufacturer'>"Pacific fleet naval manufacturer"</option>
+  <option value='Atlantic fleet naval manufacturer'>"Atlantic fleet naval manufacturer"</option>
+  <option value='Battlefleet designer'>"Battlefleet designer"</option>
+  <option value='Raiding fleet naval manufacturer'>"Raiding fleet naval manufacturer"</option>
+  <option value='Convoy escort fleet naval manufacturer'>"Convoy escort fleet naval manufacturer"</option>
+  <option value='Coastal defence fleet naval manufacturer'>"Coastal defence fleet naval manufacturer"</option>
+  <option value='Mediterranean fleet naval manufacturer'>"Mediterranean fleet naval manufacturer"</option>
+</select>
+</div>
+
+<br>
+<br>
+
 <div *ngFor="let stat of statsname; let j=index">
   <label>{{stat}}</label>
   <label>{{statslist[statsid[j]]}}</label><br>

@@ -4,6 +4,9 @@ import { hulls } from '../database';
 import { slots } from '../database';
 import { equipments } from '../database';
 import { stats } from '../database';
+import { doctrines } from '../database';
+import { classes } from '../database';
+import { designers } from '../database';
 
 @Component({
   selector: 'app-product-list',
@@ -21,12 +24,20 @@ export class ShipComponent {
   index = 0;
   stats = stats;
   statslist = {};
+  statslistretain = {};
   statsname = [];
   statsid = [];
   affectedstatslist = {};
 
   selectedEquipsList = [];
   statsEquipsList = [];
+
+  docts = [];
+  lastdoct = "";
+  classlist = [];
+
+  desilist = [];
+  lastdesi = "";
 
   constructor() {
     this.slots = slots;
@@ -36,12 +47,22 @@ export class ShipComponent {
     this.slotByHull = [];
     this.equipBySlotByHull = [];
     this.statslist = {};
+    this.statslistretain = {};
     this.statsname = [];
     this.statsid = [];
     this.affectedstatslist = {};
 
     this.selectedEquipsList = [];
     this.statsEquipsList = [];
+
+    this.docts = doctrines;
+    this.classlist = classes;
+    this.lastdoct = "No Doctrine";
+    this.lastdesi = "No Designer";
+
+    this.desilist = designers;
+
+    console.log(this.classlist);
 
     /*for(var val of this.slots){
       if(this.hulls[2].slots.indexOf(val.id) > -1){
@@ -61,7 +82,7 @@ export class ShipComponent {
       this.slotByHull.push(temp);
       temp = [];
     }
-    //console.log(this.slotByHull)
+    console.log(this.slotByHull)
 
     for(var val1 of this.slots){
       this.equipBySlot.push([]);
@@ -125,8 +146,18 @@ export class ShipComponent {
       this.statsEquipsList.push({base:tempBase,add:[],per:[],avg:[]});
     }*/
 
+    //console.log(hulls[this.index]);
+
+    console.log("stats logging");
     console.log(this.stats);
     console.log(this.statslist);
+
+    for(var val0 of this.stats){
+      this.statslistretain[val0.id] = this.statslist[val0.id];
+    }
+
+    console.log(this.statslistretain);
+    console.log("stats logging end");
 
   }
 
@@ -217,9 +248,175 @@ export class ShipComponent {
 
     }
     console.log(this.statslist);
+    console.log(this.statslistretain);
+    for(var val0 of this.stats){
+      this.statslistretain[val0.id] = this.statslist[val0.id];
+    }
+    console.log(this.statslistretain);
   }
   
+  public getclass(){
+
+    //console.log(this.selectedEquipsList);
+
+    var curhull = hulls[this.index];
+    var temp = "";
+    var finalClass = "Invalid Class";
+    for(var val20 of this.classlist){
+      if(val20.hull.indexOf(curhull.name)>-1){
+        if(val20.condition.length == 0){
+          temp = val20.name;
+        } else {
+
+          for(var val21 of this.selectedEquipsList){
+            if(val20.condition.indexOf(val21.name)>-1){
+              temp = val20.name;
+            }
+          }
+
+        }
+        if(val20.exclusion.length == 0){
+          finalClass = temp;
+        } else {
+          var tester = true;
+          for(var val22 of this.selectedEquipsList){
+            if(val20.exclusion.indexOf(val22.name)>-1){
+              tester = false;
+            }
+          }
+          if(tester){
+            finalClass = temp;
+          }
+        }
+      }
+    }
+
+    return finalClass;
+  }
+
+  public coupledselector(){
+    for(var val0 of this.stats){
+      this.statslist[val0.id] = this.statslistretain[val0.id];
+    }
+
+    console.log(this.getclass());
+    var newstat = [];
+
+    for(var val23 of this.stats){
+        var tempBase = this.statslist[val23.id];
+        newstat.push({base:tempBase,add:[],per:[],avg:[]});
+      }
+
+    //Registers Doctrine Changes
+
+    for(var val19 of this.docts){
+      if(val19.name==this.lastdoct){
+        console.log(val19);
+
+        var step = 0
+        for(var val24 of this.stats){
+          var curname = val24.id;
+          if(val19[curname] != undefined){
+            console.log(curname);
+            for(var val25 of val19[curname]){
+              if(val25[2] == this.getclass()){
+                console.log(val25);
+                newstat[step][val25[0]].push(val25[1]);
+              }
+            }
+          }
+
+          step = step+1;
+        }
+
+      }
+    }
+      //Registers Designer Changes
+
+      for(var val19 of this.desilist){
+      if(val19.name==this.lastdesi){
+        console.log(val19);
+
+        var step = 0
+        for(var val24 of this.stats){
+          var curname = val24.id;
+          if(val19[curname] != undefined){
+            console.log(curname);
+            for(var val25 of val19[curname]){
+              if(val25[2] == this.getclass()){
+                console.log(val25);
+                newstat[step][val25[0]].push(val25[1]);
+              }
+            }
+          }
+
+          step = step+1;
+        }
+
+      }
+
+    }
+
+    console.log(newstat);
+    this.updateStatsModifier(newstat);
+  }
+
+  public doctselector(doct){
+    this.lastdoct = doct;
+    this.coupledselector();
+  }
+
+  public desiselector(desi){
+    this.lastdesi = desi;
+    this.coupledselector();
+  }
+
+  public updateStatsModifier(list){
+    var justFollow = 0;
+
+    for(var val14 of list){
+      var newBase = 0;
+
+      if(val14.avg.length != 0){
+        var div = val14.avg.length;
+        if(val14.base != 0){
+          newBase = newBase + val14.base;
+          div = div + 1;
+        }
+        for(var val15 of val14.avg){
+          newBase = newBase + val15;
+        }
+        newBase = newBase/div;
+      } else {
+        newBase = newBase + val14.base;
+        if(val14.add.length != 0){
+          for(var val16 of val14.add){
+            newBase = newBase + val16;
+          }
+        }
+      }
+
+      if(val14.per.length != 0){
+        var perAddTab = [];
+        for(var val17 of val14.per){
+          var basePer = val17*newBase;
+          perAddTab.push(basePer);
+        }
+        for(var val18 of perAddTab){
+          newBase = newBase + val18;
+        }
+      }
+
+      this.statslist[this.stats[justFollow].id] = newBase;
+
+      justFollow = justFollow + 1;
+
+    }
+    console.log(this.statslist);
+  }
+
 }
+
 
 /*
 Copyright Google LLC. All Rights Reserved.

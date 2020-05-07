@@ -16,14 +16,14 @@ export class TopBarComponent implements OnInit {
   constructor() { 
 
     for(var val1 of this.hulls){
-      this.hullnum.push("window.location.href = 'https://github-6eoaag.stackblitz.io/?x=" + hulls.indexOf(val1) + "';")
+      this.hullnum.push("window.location.href = 'https://github-zts5xs.stackblitz.io/?x=" + hulls.indexOf(val1) + "';")
     }
 
   }
 
   public goToUrl(i:number): void {
     console.log(i);
-    window.location.href = "https://github-6eoaag.stackblitz.io/?x=" + i;
+    window.location.href = "https://github-zts5xs.stackblitz.io/?x=" + i;
   }
 
   ngOnInit() {
