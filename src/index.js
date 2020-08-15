@@ -789,7 +789,7 @@ class App extends Component {
 
     var a =
       <div>
-        <select id="selectTest">
+        <select onChange={() => this.swapper()} id="selectTest">
           <option value="0">Early DD Hull</option>
           <option value="1">1936 DD Hull</option>
           <option value="2">1940 DD Hull</option>
@@ -818,7 +818,6 @@ class App extends Component {
           <option value="25">1940 CV Hull</option>
           <option value="26">1944 CV Hull</option>
         </select>
-        <button onClick={() => this.swapper()}> Swap hull </button>
 
         <br/>
         <br/>
