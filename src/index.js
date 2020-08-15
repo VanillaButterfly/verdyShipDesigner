@@ -628,11 +628,8 @@ class App extends Component {
     for(var statid of Object.keys(this.avg)){
       var line = this.avg[statid]
 
-      //If the initial value is not 0, it will count towards the average ; otherwise, it will be ignored
+      //Create a temporary table to remember the values that will later be averaged
       var tempavgstat = [];
-      if(finalstat[statid] != 0){
-        tempavgstat.push(finalstat[statid])
-      }
 
       //iterates on all the keys of equ ; that is, each mounted equipment piece
       for(var equid of Object.keys(equ)){
@@ -656,7 +653,7 @@ class App extends Component {
           finalValue = finalValue + tempavgstat[j];
         }
         finalValue = finalValue / tempavgstat.length
-        finalstat[statid] = finalValue
+        finalstat[statid] = finalstat[statid] + finalValue
       }
     }
 
