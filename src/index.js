@@ -9,6 +9,9 @@ class App extends Component {
   // Currently selected hull, by number id
   set = 0;
 
+  //Technology summary table. Contains the ids of each technology checkbox
+  tech_table = ["tech_gen_1", "tech_gen_2", "tech_alt_1"]
+
   /*Hull IDs
     0 - Early DD
     1 - 36 DD
@@ -475,7 +478,8 @@ class App extends Component {
       Battlecruiser_Armor_1:0.075, Battlecruiser_Armor_2:0.075, Battlecruiser_Armor_3:0.075,
       Battleship_Armor_1:0.2, Battleship_Armor_2:0.2, Battleship_Armor_3:0.2, SH_Armor:0.25,
       Carrier_Armor:0.1},
-    steel : {},
+    steel : {generic_1:{DD:900, BB:900},
+      generic_2:{DD:9000}},
     chromium : {}
   }
   
@@ -680,11 +684,18 @@ class App extends Component {
       }
     }
 
-    // Search through add and per again to apply doctrine and designer effect if applicable
+    // Search through add and per again to apply technology, doctrine and designer effect if applicable
 
     var cla = this.ClassChecker();
     var des = document.getElementById("desi").value
     var doc = document.getElementById("doct").value
+    var tec = []
+
+    for(var k = 0; k<this.tech_table.length; k++){
+      if(document.getElementById(this.tech_table[k]).checked){
+        tec.push(document.getElementById(this.tech_table[k]).value)
+      }
+    }
 
     //iterates on all the keys of add ; that is, each existing stat
     for(var statid of Object.keys(this.add)){
@@ -738,6 +749,18 @@ class App extends Component {
         //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
         if(Object.keys(mod).indexOf(cla) != -1){
           finalstat[statid] = finalstat[statid] + (mod[cla]*rememberedValue);
+        }
+      }
+
+      for(var tec_check of tec){
+        if(Object.keys(line).indexOf(tec_check) != -1){
+
+          var mod = line[tec_check];
+
+          //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
+          if(Object.keys(mod).indexOf(cla) != -1){
+            finalstat[statid] = finalstat[statid] + (mod[cla]*rememberedValue);
+          }
         }
       }
     }
@@ -957,6 +980,22 @@ class App extends Component {
           <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
           <option value="Romanian_Black_Sea_dominance_Designer">Braila shipyards</option>
           </select>
+        </p>
+
+        <p> Technologies : </p>
+
+        <p>
+          <label>Generic technology</label><br/>
+          <input type="checkbox" id="tech_gen_1" value="generic_1"></input>
+          <label> Level 1</label><br/>
+          <input type="checkbox" id="tech_gen_2" value="generic_2"></input>
+          <label> Level 2</label><br/>
+        </p>
+
+        <p>
+          <label>Different technology</label><br/>
+          <input type="checkbox" id="tech_alt_1" value="altered_1"></input>
+          <label> Level 1</label><br/>
         </p>
 
         <p><button onClick={() => this.refresh()}> Refresh Stats </button></p>
