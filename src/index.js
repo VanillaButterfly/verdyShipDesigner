@@ -770,6 +770,13 @@ class App extends Component {
     document.getElementById('build_cost_ic').innerHTML = finalstat["build_cost_ic"];
     document.getElementById('steel').innerHTML = finalstat["steel"];
     document.getElementById('chromium').innerHTML = finalstat["chromium"];
+
+    if(this.ClassChecker() == "CA" || this.ClassChecker() == "BB" || this.ClassChecker() == "BC" || this.ClassChecker() == "CV"){
+      document.getElementById('isCapital').innerHTML = "This vessel is a CAPITAL SHIP";
+    }
+    if(this.ClassChecker() == "CL" || this.ClassChecker() == "DD"){
+      document.getElementById('isCapital').innerHTML = "This vessel is a SCREEN SHIP";
+    }
   }
 
   // Default render function that returns the html of the page. This function should NEVER BE CALLED ; to reload the page according to its return value, use: render(<App />, document.getElementById('root'))
@@ -820,6 +827,7 @@ class App extends Component {
 
     var b =
       <div>
+        <p><label id="isCapital"></label></p>
         <p>
           <label>Naval Speed : </label>
           <label id='naval_speed'></label>
@@ -953,6 +961,7 @@ class App extends Component {
         </p>
 
         <p><button onClick={() => this.refresh()}> Refresh Stats </button></p>
+
       </div>
     ;
 
