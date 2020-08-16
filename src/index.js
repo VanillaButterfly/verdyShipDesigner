@@ -1094,7 +1094,7 @@ class App extends Component {
           <label>Torpedo tube mine deployment</label><br/>
         </p>
 
-        <p><button onClick={() => this.refresh()}> Refresh Stats </button></p>
+        <p><button onClick={() => this.refresh()}>Calculate</button></p>
 
       </div>
     ;
