@@ -911,117 +911,6 @@ class App extends Component {
 
     var b =
       <div>
-        <p><label id="isCapital"></label></p>
-        <p>
-          <label>Naval Speed : </label>
-          <label id='naval_speed'></label>
-          <label> | </label>
-  
-          <label>Naval Range : </label>
-          <label id='naval_range'></label>
-          <label> | </label>
-  
-          <label>Max Organization : </label>
-          <label id='max_organisation'></label>
-          <label> | </label>
-  
-          <label>Max Strength : </label>
-          <label id='max_strength'></label>
-          <label> | </label>
-  
-          <label>Reliability : </label>
-          <label id='reliability'></label>
-          <label> | </label>
-  
-          <label>Supply Consumption : </label>
-          <label id='supply_consumption'></label>
-          <label> | </label>
-  
-          <label>Manpower : </label>
-          <label id='manpower'></label>
-          <label> | </label>
-  
-          <label>Carrier Size : </label>
-          <label id='carrier_size'></label>
-          <label> | </label>
-        </p>
-
-        <p>
-          <label>Light Attack : </label>
-          <label id='lg_attack'></label>
-          <label> | </label>
-  
-          <label>Light Armor Piercing : </label>
-          <label id='lg_armor_piercing'></label>
-          <label> | </label>
-  
-          <label>Heavy Attack : </label>
-          <label id='hg_attack'></label>
-          <label> | </label>
-  
-          <label>Heavy Armor Piercing : </label>
-          <label id='hg_armor_piercing'></label>
-          <label> | </label>
-  
-          <label>Torpedo Attack : </label>
-          <label id='torpedo_attack'></label>
-          <label> | </label>
-  
-          <label>Submarine Attack : </label>
-          <label id='sub_attack'></label>
-          <label> | </label>
-  
-          <label>Armor Value : </label>
-          <label id='armor_value'></label>
-          <label> | </label>
-  
-          <label>Anti Air Attack : </label>
-          <label id='anti_air_attack'></label>
-          <label> | </label>
-        </p>
-
-        <p>
-          <label>Fuel Consumption : </label>
-          <label id='fuel_consumption'></label>
-          <label> | </label>
-  
-          <label>Surface Visibility : </label>
-          <label id='surface_visibility'></label>
-          <label> | </label>
-  
-          <label>Surface Detection : </label>
-          <label id='surface_detection'></label>
-          <label> | </label>
-  
-          <label>Submarine Visibility : </label>
-          <label id='sub_visibility'></label>
-          <label> | </label>
-  
-          <label>Submarine Detection : </label>
-          <label id='sub_detection'></label>
-          <label> | </label>
-  
-          <label>Mines Planting : </label>
-          <label id='mines_planting'></label>
-          <label> | </label>
-  
-          <label>Mines Sweeping : </label>
-          <label id='mines_sweeping'></label>
-          <label> | </label>
-  
-          <label>Build Cost : </label>
-          <label id='build_cost_ic'></label>
-          <label> | </label>
-        </p>
-
-        <label>Steel Cost : </label>
-        <label id='steel'></label>
-        <label> | </label>
-
-        <label>Chromium Cost : </label>
-        <label id='chromium'></label>
-        <label> | </label>
-
         <p>
           <select id="doct">
           <option value="No_Doctrine">No doctrine</option>
@@ -1093,6 +982,137 @@ class App extends Component {
           <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
           <label>Torpedo tube mine deployment</label><br/>
         </p>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <label>Max Speed : </label>
+                <label id='naval_speed'></label>
+                <label> kn</label>
+              </td>
+              <td>
+                <label>Light Attack : </label>
+                <label id='lg_attack'></label>
+              </td>
+              <td>
+                <label>Fuel Usage : </label>
+                <label id='fuel_consumption'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Max Range : </label>
+                <label id='naval_range'></label>
+                <label> km</label>
+              </td>
+              <td>
+                <label>Light Piercing : </label>
+                <label id='lg_armor_piercing'></label>
+              </td>
+              <td>
+                <label>Surface Visibility : </label>
+                <label id='surface_visibility'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Organization : </label>
+                <label id='max_organisation'></label>
+              </td>
+              <td>
+                <label>Heavy Attack : </label>
+                <label id='hg_attack'></label>
+              </td>
+              <td>
+                <label>Surface Detection : </label>
+                <label id='surface_detection'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>HP : </label>
+                <label id='max_strength'></label>
+              </td>
+              <td>
+                <label>Heavy Piercing : </label>
+                <label id='hg_armor_piercing'></label>
+              </td>
+              <td>
+                <label>Sub Visibility : </label>
+                <label id='sub_visibility'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Reliability : </label>
+                <label id='reliability'></label>
+              </td>
+              <td>
+                <label>Torpedo Attack : </label>
+                <label id='torpedo_attack'></label>
+              </td>
+              <td>
+                <label>Sub Detection : </label>
+                <label id='sub_detection'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Supply Use : </label>
+                <label id='supply_consumption'></label>
+              </td>
+              <td>
+                <label>Depth Charges : </label>
+                <label id='sub_attack'></label>
+              </td>
+              <td>
+                <label>Minelaying : </label>
+                <label id='mines_planting'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Manpower : </label>
+                <label id='manpower'></label>
+              </td>
+              <td>
+                <label>Armor : </label>
+                <label id='armor_value'></label>
+              </td>
+              <td>
+                <label>Minesweeping : </label>
+                <label id='mines_sweeping'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Deck Size : </label>
+                <label id='carrier_size'></label>
+              </td>
+              <td>
+                <label>Anti-Air : </label>
+                <label id='anti_air_attack'></label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Steel : </label>
+                <label id='steel'></label>
+              </td>
+              <td>
+                <label>Chromium : </label>
+                <label id='chromium'></label>
+              </td>
+              <td>
+                <label>Production Cost : </label>
+                <label id='build_cost_ic'></label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><label id="isCapital"></label></p>
 
         <p><button onClick={() => this.refresh()}>Calculate</button></p>
 

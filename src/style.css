@@ -5,3 +5,9 @@ select{
   width: 14%;
   border: 1px solid rgb(21, 90, 155);
 }
+table{
+  width:100%
+}
+td{
+  width:33%
+}
