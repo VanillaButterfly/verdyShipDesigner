@@ -575,6 +575,16 @@ class App extends Component {
     }
   }
 
+  decimalCutToThree(num){
+    var str = num.toString()
+    for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.' && str.length-1-i>2){
+        return(str.substring(0,i+3))
+      }
+    }
+    return (str)
+  }
+
 
   // Refresh recalculates the stats. It may be called at any point and should be called immediately after each change, ideally, but can also be called manually
   refresh(){
@@ -788,32 +798,32 @@ class App extends Component {
 
     // Writes all the values into the html for the user to see
 
-    document.getElementById('naval_speed').innerHTML = finalstat["naval_speed"];
-    document.getElementById('naval_range').innerHTML = finalstat["naval_range"];
-    document.getElementById('max_organisation').innerHTML = finalstat["max_organisation"];
-    document.getElementById('max_strength').innerHTML = finalstat["max_strength"];
-    document.getElementById('reliability').innerHTML = finalstat["reliability"];
-    document.getElementById('supply_consumption').innerHTML = finalstat["supply_consumption"];
-    document.getElementById('manpower').innerHTML = finalstat["manpower"];
-    document.getElementById('carrier_size').innerHTML = finalstat["carrier_size"];
-    document.getElementById('lg_attack').innerHTML = finalstat["lg_attack"];
-    document.getElementById('lg_armor_piercing').innerHTML = finalstat["lg_armor_piercing"];
-    document.getElementById('hg_attack').innerHTML = finalstat["hg_attack"];
-    document.getElementById('hg_armor_piercing').innerHTML = finalstat["hg_armor_piercing"];
-    document.getElementById('torpedo_attack').innerHTML = finalstat["torpedo_attack"];
-    document.getElementById('sub_attack').innerHTML = finalstat["sub_attack"];
-    document.getElementById('armor_value').innerHTML = finalstat["armor_value"];
-    document.getElementById('anti_air_attack').innerHTML = finalstat["anti_air_attack"];
-    document.getElementById('fuel_consumption').innerHTML = finalstat["fuel_consumption"];
-    document.getElementById('surface_visibility').innerHTML = finalstat["surface_visibility"];
-    document.getElementById('surface_detection').innerHTML = finalstat["surface_detection"];
-    document.getElementById('sub_visibility').innerHTML = finalstat["sub_visibility"];
-    document.getElementById('sub_detection').innerHTML = finalstat["sub_detection"];
-    document.getElementById('mines_planting').innerHTML = finalstat["mines_planting"];
-    document.getElementById('mines_sweeping').innerHTML = finalstat["mines_sweeping"];
-    document.getElementById('build_cost_ic').innerHTML = finalstat["build_cost_ic"];
-    document.getElementById('steel').innerHTML = finalstat["steel"];
-    document.getElementById('chromium').innerHTML = finalstat["chromium"];
+    document.getElementById('naval_speed').innerHTML = this.decimalCutToThree(finalstat["naval_speed"]);
+    document.getElementById('naval_range').innerHTML = this.decimalCutToThree(finalstat["naval_range"]);
+    document.getElementById('max_organisation').innerHTML = this.decimalCutToThree(finalstat["max_organisation"]);
+    document.getElementById('max_strength').innerHTML = this.decimalCutToThree(finalstat["max_strength"]);
+    document.getElementById('reliability').innerHTML = this.decimalCutToThree(finalstat["reliability"]);
+    document.getElementById('supply_consumption').innerHTML = this.decimalCutToThree(finalstat["supply_consumption"]);
+    document.getElementById('manpower').innerHTML = this.decimalCutToThree(finalstat["manpower"]);
+    document.getElementById('carrier_size').innerHTML = this.decimalCutToThree(finalstat["carrier_size"]);
+    document.getElementById('lg_attack').innerHTML = this.decimalCutToThree(finalstat["lg_attack"]);
+    document.getElementById('lg_armor_piercing').innerHTML = this.decimalCutToThree(finalstat["lg_armor_piercing"]);
+    document.getElementById('hg_attack').innerHTML = this.decimalCutToThree(finalstat["hg_attack"]);
+    document.getElementById('hg_armor_piercing').innerHTML = this.decimalCutToThree(finalstat["hg_armor_piercing"]);
+    document.getElementById('torpedo_attack').innerHTML = this.decimalCutToThree(finalstat["torpedo_attack"]);
+    document.getElementById('sub_attack').innerHTML = this.decimalCutToThree(finalstat["sub_attack"]);
+    document.getElementById('armor_value').innerHTML = this.decimalCutToThree(finalstat["armor_value"]);
+    document.getElementById('anti_air_attack').innerHTML = this.decimalCutToThree(finalstat["anti_air_attack"]);
+    document.getElementById('fuel_consumption').innerHTML = this.decimalCutToThree(finalstat["fuel_consumption"]);
+    document.getElementById('surface_visibility').innerHTML = this.decimalCutToThree(finalstat["surface_visibility"]);
+    document.getElementById('surface_detection').innerHTML = this.decimalCutToThree(finalstat["surface_detection"]);
+    document.getElementById('sub_visibility').innerHTML = this.decimalCutToThree(finalstat["sub_visibility"]);
+    document.getElementById('sub_detection').innerHTML = this.decimalCutToThree(finalstat["sub_detection"]);
+    document.getElementById('mines_planting').innerHTML = this.decimalCutToThree(finalstat["mines_planting"]);
+    document.getElementById('mines_sweeping').innerHTML = this.decimalCutToThree(finalstat["mines_sweeping"]);
+    document.getElementById('build_cost_ic').innerHTML = this.decimalCutToThree(finalstat["build_cost_ic"]);
+    document.getElementById('steel').innerHTML = this.decimalCutToThree(finalstat["steel"]);
+    document.getElementById('chromium').innerHTML = this.decimalCutToThree(finalstat["chromium"]);
 
     if(this.ClassChecker() == "CA" || this.ClassChecker() == "BB" || this.ClassChecker() == "BC" || this.ClassChecker() == "CV"){
       document.getElementById('isCapital').innerHTML = "This vessel is a CAPITAL ship";
