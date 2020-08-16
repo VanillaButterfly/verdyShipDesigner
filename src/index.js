@@ -662,7 +662,11 @@ class App extends Component {
       }
     }
 
-    // Search the add table for equipment ids present in equ and modifies the stats accordingly
+    var cla = this.ClassChecker();
+    var des = document.getElementById("desi").value
+    var doc = document.getElementById("doct").value
+
+    // Search the add table for equipment ids present in equ and modifies the stats accordingly. Also handles designers, doctrines and techs
 
     //iterates on all the keys of add ; that is, each existing stat
     for(var statid of Object.keys(this.add)){
@@ -680,6 +684,28 @@ class App extends Component {
           for(var i = 0; i < equ[equid]; i++){
             finalstat[statid] = finalstat[statid] + mod;
           }
+        }
+      }
+
+      //checks to see if the current designer piece modifies the currenty examined stat
+      if(Object.keys(line).indexOf(des) != -1){
+
+        var mod = line[des];
+
+        //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
+        if(Object.keys(mod).indexOf(cla) != -1){
+          finalstat[statid] = finalstat[statid] + mod[cla];
+        }
+      }
+
+      //checks to see if the current doctrine piece modifies the currenty examined stat
+      if(Object.keys(line).indexOf(doc) != -1){
+
+        var mod = line[doc];
+
+        //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
+        if(Object.keys(mod).indexOf(cla) != -1){
+          finalstat[statid] = finalstat[statid] + mod[cla];
         }
       }
     }
@@ -719,7 +745,7 @@ class App extends Component {
       }
     }
 
-    // Search the per table for equipment ids present in equ and modifies the stats accordingly
+    // Search the per table for equipment ids present in equ and modifies the stats accordingly. also handles designers
 
     //iterates on all the keys of per ; that is, each existing stat
     for(var statid of Object.keys(this.per)){
@@ -740,53 +766,7 @@ class App extends Component {
           }
         }
       }
-    }
 
-    // Search through add and per again to apply technology, doctrine and designer effect if applicable
-
-    var cla = this.ClassChecker();
-    var des = document.getElementById("desi").value
-    var doc = document.getElementById("doct").value
-    var tec = []
-
-    for(var k = 0; k<this.tech_table.length; k++){
-      if(document.getElementById(this.tech_table[k]).checked){
-        tec.push(document.getElementById(this.tech_table[k]).value)
-      }
-    }
-
-    //iterates on all the keys of add ; that is, each existing stat
-    for(var statid of Object.keys(this.add)){
-      var line = this.add[statid]
-      
-      //checks to see if the current designer piece modifies the currenty examined stat
-      if(Object.keys(line).indexOf(des) != -1){
-
-        var mod = line[des];
-
-        //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
-        if(Object.keys(mod).indexOf(cla) != -1){
-          finalstat[statid] = finalstat[statid] + mod[cla];
-        }
-      }
-
-      //checks to see if the current doctrine piece modifies the currenty examined stat
-      if(Object.keys(line).indexOf(doc) != -1){
-
-        var mod = line[doc];
-
-        //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
-        if(Object.keys(mod).indexOf(cla) != -1){
-          finalstat[statid] = finalstat[statid] + mod[cla];
-        }
-      }
-    }
-
-    //iterates on all the keys of per ; that is, each existing stat
-    for(var statid of Object.keys(this.per)){
-      var line = this.per[statid]
-      var rememberedValue = finalstat[statid];
-      
       //checks to see if the current designer piece modifies the currenty examined stat
       if(Object.keys(line).indexOf(des) != -1){
 
@@ -797,6 +777,22 @@ class App extends Component {
           finalstat[statid] = finalstat[statid] + (mod[cla]*rememberedValue);
         }
       }
+    }
+
+    // Search through per again to apply technology, doctrine effect if applicable
+
+    var tec = []
+
+    for(var k = 0; k<this.tech_table.length; k++){
+      if(document.getElementById(this.tech_table[k]).checked){
+        tec.push(document.getElementById(this.tech_table[k]).value)
+      }
+    }
+
+    //iterates on all the keys of per ; that is, each existing stat
+    for(var statid of Object.keys(this.per)){
+      var line = this.per[statid]
+      var rememberedValue = finalstat[statid];
 
       //checks to see if the current doctrine piece modifies the currenty examined stat
       if(Object.keys(line).indexOf(doc) != -1){
