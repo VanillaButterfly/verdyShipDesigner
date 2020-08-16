@@ -660,6 +660,14 @@ class App extends Component {
     var des = document.getElementById("desi").value
     var doc = document.getElementById("doct").value
 
+    var tec = []
+
+    for(var k = 0; k<this.tech_table.length; k++){
+      if(document.getElementById(this.tech_table[k]).checked){
+        tec.push(document.getElementById(this.tech_table[k]).value)
+      }
+    }
+
     // Search the add table for equipment ids present in equ and modifies the stats accordingly. Also handles designers, doctrines and techs
 
     //iterates on all the keys of add ; that is, each existing stat
@@ -700,6 +708,19 @@ class App extends Component {
         //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
         if(Object.keys(mod).indexOf(cla) != -1){
           finalstat[statid] = finalstat[statid] + mod[cla];
+        }
+      }
+
+      // add of technologies
+      for(var tec_check of tec){
+        if(Object.keys(line).indexOf(tec_check) != -1){
+
+          var mod = line[tec_check];
+
+          //Check the relevant modifier for the class of the concerned vessel, and applies it, if any
+          if(Object.keys(mod).indexOf(cla) != -1){
+            finalstat[statid] = finalstat[statid] + mod[cla];
+          }
         }
       }
     }
@@ -774,14 +795,6 @@ class App extends Component {
     }
 
     // Search through per again to apply technology, doctrine effect if applicable
-
-    var tec = []
-
-    for(var k = 0; k<this.tech_table.length; k++){
-      if(document.getElementById(this.tech_table[k]).checked){
-        tec.push(document.getElementById(this.tech_table[k]).value)
-      }
-    }
 
     //iterates on all the keys of per ; that is, each existing stat
     for(var statid of Object.keys(this.per)){
