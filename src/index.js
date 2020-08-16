@@ -10,7 +10,7 @@ class App extends Component {
   set = 0;
 
   //Technology summary table. Contains the ids of each technology checkbox
-  tech_table = ["tech_gen_1", "tech_gen_2", "tech_alt_1"]
+  tech_table = ["magnetic_detonator", "homing_torpedo", "basic_light_shell", "improved_light_shell", "basic_medium_shell", "improved_medium_shell", "basic_heavy_shell", "improved_heavy_shell", "bracket_shooting", "ladder_shooting", "shell_dyes", "improved_submarine_mine_laying"]
 
   /*Hull IDs
     0 - Early DD
@@ -427,8 +427,18 @@ class App extends Component {
       Coastal_defence_fleet_Designer:{CV:-0.2}},
     lg_attack : {Romanian_coastal_defence_fleet_Designer:{CA:0.1, CL:0.1, DD:0.1},
       Fire_Control_0:0.05, Fire_Control_1:0.1, Fire_Control_2:0.15, Fire_Control_3:0.2,
-      Radar_3:0.05, Radar_4:0.1},
-    lg_armor_piercing : {},
+      Radar_3:0.05, Radar_4:0.1,
+      Light_shell_1:{CV:0.05, BB:0.05, BC:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Light_shell_2:{CV:0.05, BB:0.05, BC:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Medium_shell_1:{CL:0.05},
+      Medium_shell_2:{CL:0.05},
+      Fire_control_methods_1:{BB:0.05, BC:0.05},
+      Fire_control_methods_2:{BB:0.1, BC:0.1, CA:0.05},
+      Fire_control_methods_3:{BB:0.15, BC:0.15, CA:0.1, CL:0.1, DD:0.05}},
+    lg_armor_piercing : {Light_shell_1:{CV:0.05, BB:0.05, BC:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Light_shell_2:{CV:0.05, BB:0.05, BC:0.05, CA:0.05, CL:0.05, DD:0.05},
+      Medium_shell_1:{CL:0.05},
+      Medium_shell_2:{CL:0.05}},
     hg_attack : {Fleet_in_Being_Doctrine:{BB:0.1, BC:0.1, CA:0.1},
       Atlantic_fleet_Designer:{BB:0.1, BC:0.1, CA:0.1},
       Battlefleet_Designer:{BB:0.15, BC:0.15, CA:0.15},
@@ -436,10 +446,22 @@ class App extends Component {
       Coastal_defence_fleet_Designer:{BB:-0.2, BC:-0.2, CA:-0.2},
       Romanian_Black_Sea_dominance_Designer:{BB:0.2, BC:0.2, CA:0.2},
       Fire_Control_0:0.05, Fire_Control_1:0.1, Fire_Control_2:0.15, Fire_Control_3:0.2,
-      Radar_3:0.05, Radar_4:0.1},
-    hg_armor_piercing : {},
+      Radar_3:0.05, Radar_4:0.1,
+      Medium_shell_1:{CA:0.05},
+      Medium_shell_2:{CA:0.05},
+      Heavy_shell_1:{BB:0.05, BC:0.05},
+      Heavy_shell_2:{BB:0.05, BC:0.05},
+      Fire_control_methods_1:{BB:0.05, BC:0.05},
+      Fire_control_methods_2:{BB:0.1, BC:0.1, CA:0.05},
+      Fire_control_methods_3:{BB:0.15, BC:0.15, CA:0.1}},
+    hg_armor_piercing : {Medium_shell_1:{CA:0.05},
+      Medium_shell_2:{CA:0.05},
+      Heavy_shell_1:{BB:0.05, BC:0.05},
+      Heavy_shell_2:{BB:0.05, BC:0.05}},
     torpedo_attack : {Trade_Interdiction_Doctrine:{SS:0.1},
-      Battlefleet_Designer:{Cl:0.25, DD:0.25}},
+      Battlefleet_Designer:{CL:0.25, DD:0.25},
+      Torpedo_1:{CA:0.2, CL:0.2, DD:0.2, SS:0.2},
+      Torpedo_2:{CA:0.2, CL:0.2, DD:0.2, SS:0.2}},
     sub_attack : {},
     armor_value : {Fleet_in_Being_Doctrine:{BB:0.1, BC:0.1, CA:0.1},
       Trade_Interdiction_Doctrine:{BB:0.1, BC:0.1, CA:0.1},
@@ -478,8 +500,7 @@ class App extends Component {
       Battlecruiser_Armor_1:0.075, Battlecruiser_Armor_2:0.075, Battlecruiser_Armor_3:0.075,
       Battleship_Armor_1:0.2, Battleship_Armor_2:0.2, Battleship_Armor_3:0.2, SH_Armor:0.25,
       Carrier_Armor:0.1},
-    steel : {generic_1:{DD:900, BB:900},
-      generic_2:{DD:9000}},
+    steel : {},
     chromium : {}
   }
   
@@ -985,17 +1006,51 @@ class App extends Component {
         <p> Technologies : </p>
 
         <p>
-          <label>Generic technology</label><br/>
-          <input type="checkbox" id="tech_gen_1" value="generic_1"></input>
-          <label> Level 1</label><br/>
-          <input type="checkbox" id="tech_gen_2" value="generic_2"></input>
-          <label> Level 2</label><br/>
+          <label>Torpedo</label><br/>
+          <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
+          <label>Magnetic detonator</label><br/>
+          <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
+          <label>Homing torpedo</label><br/>
         </p>
 
         <p>
-          <label>Different technology</label><br/>
-          <input type="checkbox" id="tech_alt_1" value="altered_1"></input>
-          <label> Level 1</label><br/>
+          <label>Light shell</label><br/>
+          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
+          <label>Small caliber semi armor piercing shell</label><br/>
+          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+          <label>Small caliber armor piercing shell</label><br/>
+        </p>
+
+        <p>
+          <label>Medium shell</label><br/>
+          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
+          <label>Armor piercing capped medium shell</label><br/>
+          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+          <label>Medium caliber semi armor piercing shell</label><br/>
+        </p>
+
+        <p>
+          <label>Heavy shell</label><br/>
+          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
+          <label>Armor piercing capped shell</label><br/>
+          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+          <label>Super heavy armor piercing shell</label><br/>
+        </p>
+
+        <p>
+          <label>Fire control methods</label><br/>
+          <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
+          <label>Bracket shooting</label><br/>
+          <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
+          <label>Ladder shooting</label><br/>
+          <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
+          <label>Shell dyes</label><br/>
+        </p>
+
+        <p>
+          <label>Mines</label><br/>
+          <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
+          <label>Torpedo tube mine deployment</label><br/>
         </p>
 
         <p><button onClick={() => this.refresh()}> Refresh Stats </button></p>
