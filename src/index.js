@@ -606,7 +606,7 @@ class App extends Component {
     var str = (num*100).toString()
     for(var i = 0 ; i<str.length; i++){
       if(str.charAt(i) == '.'){
-        return(str.substring(0,i))
+        return(str.substring(0,i)+"%")
       }
     }
     return (str+"%")
