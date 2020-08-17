@@ -935,9 +935,9 @@ class App extends Component {
     ;
 
     var b =
-      <div>
+      <div class="center">
         <br/>
-        <p class="center">
+        <p>
           <select id="doct">
           <option value="No_Doctrine">No doctrine</option>
           <option value="Fleet_in_Being_Doctrine">Fleet in being</option>
@@ -958,195 +958,210 @@ class App extends Component {
           <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
           </select>
         </p>
-
-        <p> Technologies : </p>
-
-        <table id="techno">
-          <tbody>
-            <tr>
-              <td class="techno_cell">
-                <p>
-                  <label>Light shell</label><br/>
-                  <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
-                  <label>Small caliber semi armor piercing shell</label><br/>
-                  <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
-                  <label>Small caliber armor piercing shell</label><br/>
-                </p>
-                <p>
-                  <label>Medium shell</label><br/>
-                  <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
-                  <label>Armor piercing capped medium shell</label><br/>
-                  <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
-                  <label>Medium caliber semi armor piercing shell</label><br/>
-                </p>
-                <p>
-                  <label>Heavy shell</label><br/>
-                  <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
-                  <label>Armor piercing capped shell</label><br/>
-                  <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
-                  <label>Super heavy armor piercing shell</label><br/>
-                </p>
-              </td>
-              <td class="techno_cell">
-                <p>
-                  <label>Fire control methods</label><br/>
-                  <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
-                  <label>Bracket shooting</label><br/>
-                  <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
-                  <label>Ladder shooting</label><br/>
-                  <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
-                  <label>Shell dyes</label><br/>
-                </p>
-                <p>
-                  <label>Torpedo</label><br/>
-                  <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
-                  <label>Magnetic detonator</label><br/>
-                  <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
-                  <label>Homing torpedo</label><br/>
-                </p>
-                <p>
-                  <label>Mines</label><br/>
-                  <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
-                  <label>Torpedo tube mine deployment</label><br/>
-                </p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <br/>
 
         <table>
           <tbody>
             <tr>
               <td>
-                <label>Base Stats</label>
+                <table id="techno">
+                  <tbody>
+                    <tr>
+                      <td class="techno_cell">
+                        <label> Technologies : </label>
+                      </td>
+                      <td class="techno_cell">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="techno_cell">
+                        <p>
+                          <label>Light shell</label><br/>
+                          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
+                          <label>Small caliber semi armor piercing shell</label><br/>
+                          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+                          <label>Small caliber armor piercing shell</label><br/>
+                        </p>
+                        <p>
+                          <label>Medium shell</label><br/>
+                          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
+                          <label>Armor piercing capped medium shell</label><br/>
+                          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+                          <label>Medium caliber semi armor piercing shell</label><br/>
+                        </p>
+                        <p>
+                          <label>Heavy shell</label><br/>
+                          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
+                          <label>Armor piercing capped shell</label><br/>
+                          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+                          <label>Super heavy armor piercing shell</label><br/>
+                        </p>
+                      </td>
+                      <td class="techno_cell">
+                        <p>
+                          <label>Fire control methods</label><br/>
+                          <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
+                          <label>Bracket shooting</label><br/>
+                          <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
+                          <label>Ladder shooting</label><br/>
+                          <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
+                          <label>Shell dyes</label><br/>
+                        </p>
+                        <p>
+                          <label>Torpedo</label><br/>
+                          <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
+                          <label>Magnetic detonator</label><br/>
+                          <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
+                          <label>Homing torpedo</label><br/>
+                        </p>
+                        <p>
+                          <label>Mines</label><br/>
+                          <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
+                          <label>Torpedo tube mine deployment</label><br/>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </td>
               <td>
-                <label>Combat Stats</label>
-              </td>
-              <td>
-                <label>Misc. Stats</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Max Speed : </label>
-                <label id='naval_speed'></label>
-              </td>
-              <td>
-                <label>Light Attack : </label>
-                <label id='lg_attack'></label>
-              </td>
-              <td>
-                <label>Fuel Usage : </label>
-                <label id='fuel_consumption'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Max Range : </label>
-                <label id='naval_range'></label>
-              </td>
-              <td>
-                <label>Light Piercing : </label>
-                <label id='lg_armor_piercing'></label>
-              </td>
-              <td>
-                <label>Surface Visibility : </label>
-                <label id='surface_visibility'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Organization : </label>
-                <label id='max_organisation'></label>
-              </td>
-              <td>
-                <label>Heavy Attack : </label>
-                <label id='hg_attack'></label>
-              </td>
-              <td>
-                <label>Surface Detection : </label>
-                <label id='surface_detection'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>HP : </label>
-                <label id='max_strength'></label>
-              </td>
-              <td>
-                <label>Heavy Piercing : </label>
-                <label id='hg_armor_piercing'></label>
-              </td>
-              <td>
-                <label>Sub Visibility : </label>
-                <label id='sub_visibility'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Reliability : </label>
-                <label id='reliability'></label>
-              </td>
-              <td>
-                <label>Torpedo Attack : </label>
-                <label id='torpedo_attack'></label>
-              </td>
-              <td>
-                <label>Sub Detection : </label>
-                <label id='sub_detection'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Supply Use : </label>
-                <label id='supply_consumption'></label>
-              </td>
-              <td>
-                <label>Depth Charges : </label>
-                <label id='sub_attack'></label>
-              </td>
-              <td>
-                <label>Minelaying : </label>
-                <label id='mines_planting'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Manpower : </label>
-                <label id='manpower'></label>
-              </td>
-              <td>
-                <label>Armor : </label>
-                <label id='armor_value'></label>
-              </td>
-              <td>
-                <label>Minesweeping : </label>
-                <label id='mines_sweeping'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Deck Size : </label>
-                <label id='carrier_size'></label>
-              </td>
-              <td>
-                <label>Anti-Air : </label>
-                <label id='anti_air_attack'></label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label>Steel : </label>
-                <label id='steel'></label>
-              </td>
-              <td>
-                <label>Chromium : </label>
-                <label id='chromium'></label>
-              </td>
-              <td>
-                <label>Production Cost : </label>
-                <label id='build_cost_ic'></label>
+                <table id="stats">
+                  <tbody>
+                    <tr>
+                      <td class="stats_cell">
+                        <label>Base Stats</label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Combat Stats</label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Misc. Stats</label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Max Speed : </label>
+                        <label id='naval_speed'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Light Attack : </label>
+                        <label id='lg_attack'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Fuel Usage : </label>
+                        <label id='fuel_consumption'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Max Range : </label>
+                        <label id='naval_range'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Light Piercing : </label>
+                        <label id='lg_armor_piercing'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Surface Visibility : </label>
+                        <label id='surface_visibility'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Organization : </label>
+                        <label id='max_organisation'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Heavy Attack : </label>
+                        <label id='hg_attack'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Surface Detection : </label>
+                        <label id='surface_detection'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>HP : </label>
+                        <label id='max_strength'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Heavy Piercing : </label>
+                        <label id='hg_armor_piercing'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Sub Visibility : </label>
+                        <label id='sub_visibility'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Reliability : </label>
+                        <label id='reliability'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Torpedo Attack : </label>
+                        <label id='torpedo_attack'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Sub Detection : </label>
+                        <label id='sub_detection'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Supply Use : </label>
+                        <label id='supply_consumption'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Depth Charges : </label>
+                        <label id='sub_attack'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Minelaying : </label>
+                        <label id='mines_planting'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Manpower : </label>
+                        <label id='manpower'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Armor : </label>
+                        <label id='armor_value'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Minesweeping : </label>
+                        <label id='mines_sweeping'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Deck Size : </label>
+                        <label id='carrier_size'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Anti-Air : </label>
+                        <label id='anti_air_attack'></label>
+                      </td>
+                    </tr>
+                    <tr>
+                       <td class="stats_cell">
+                        <label>Steel : </label>
+                        <label id='steel'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Chromium : </label>
+                        <label id='chromium'></label>
+                      </td>
+                       <td class="stats_cell">
+                        <label>Production Cost : </label>
+                        <label id='build_cost_ic'></label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </td>
             </tr>
           </tbody>

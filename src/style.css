@@ -15,15 +15,21 @@ h1, p, label {
 #desi{
   margin-left:210px
 }
+table{
+  width:1470px
+}
+td{
+  width:840px
+}
 #techno{
   width:700px
 }
 .techno_cell{
   width:50%
 }
-table{
+#stats{
   width:500px
 }
-td{
+.stats_cell{
   width:33%
 }
