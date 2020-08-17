@@ -4,13 +4,18 @@ h1, p, label {
 #title{
   margin: auto;
   text-align: center;
+  font-size: 30px
 }select{
   width: 210px;
   border: 1px solid rgb(21, 90, 155);
+  margin-top:1px;
 }
 .center{
   margin: auto;
   width:1470px
+}
+.bold{
+  font-weight: bold
 }
 #desi{
   margin-left:210px
@@ -19,7 +24,7 @@ table{
   width:1470px
 }
 td{
-  width:840px
+  width:57%
 }
 #techno{
   width:700px
@@ -32,4 +37,8 @@ td{
 }
 .stats_cell{
   width:33%
+}
+#calculate{
+  padding:7px 20px;
+  font-size: 16px
 }

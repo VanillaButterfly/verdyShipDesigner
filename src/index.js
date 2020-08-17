@@ -875,13 +875,13 @@ class App extends Component {
     document.getElementById('chromium').innerHTML = this.decimalCutToNone(finalstat["chromium"]);
 
     if(this.ClassChecker() == "CA" || this.ClassChecker() == "BB" || this.ClassChecker() == "BC" || this.ClassChecker() == "CV"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a CAPITAL ship";
+      document.getElementById('isCapital').innerHTML = "This vessel is a capital ship";
     }
     if(this.ClassChecker() == "CL" || this.ClassChecker() == "DD"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a SCREEN ship";
+      document.getElementById('isCapital').innerHTML = "This vessel is a screen ship";
     }
     if(this.ClassChecker() == "SS"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a SUBMARINE";
+      document.getElementById('isCapital').innerHTML = "This vessel is a submarine";
     }
   }
 
@@ -895,7 +895,10 @@ class App extends Component {
 
     var a =
       <div>
-        <p id="title">Hearts of Iron IV 1.9.3 naval calculator</p>
+        <p id="title">Naval calculator</p>
+        <p id="title">Hearts of Iron IV 1.9.3</p>
+        <br/>
+        <br/>
         <br/>
 
         <div class="center">
@@ -968,7 +971,7 @@ class App extends Component {
                   <tbody>
                     <tr>
                       <td class="techno_cell">
-                        <label> Technologies : </label>
+                        <label class="bold"> Technologies : </label>
                       </td>
                       <td class="techno_cell">
                       </td>
@@ -976,21 +979,21 @@ class App extends Component {
                     <tr>
                       <td class="techno_cell">
                         <p>
-                          <label>Light shell</label><br/>
+                          <label class="bold">Light shell</label><br/>
                           <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
                           <label>Small caliber semi armor piercing shell</label><br/>
                           <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
                           <label>Small caliber armor piercing shell</label><br/>
                         </p>
                         <p>
-                          <label>Medium shell</label><br/>
+                          <label class="bold">Medium shell</label><br/>
                           <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
                           <label>Armor piercing capped medium shell</label><br/>
                           <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
                           <label>Medium caliber semi armor piercing shell</label><br/>
                         </p>
                         <p>
-                          <label>Heavy shell</label><br/>
+                          <label class="bold">Heavy shell</label><br/>
                           <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
                           <label>Armor piercing capped shell</label><br/>
                           <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
@@ -999,7 +1002,7 @@ class App extends Component {
                       </td>
                       <td class="techno_cell">
                         <p>
-                          <label>Fire control methods</label><br/>
+                          <label class="bold">Fire control methods</label><br/>
                           <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
                           <label>Bracket shooting</label><br/>
                           <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
@@ -1008,14 +1011,14 @@ class App extends Component {
                           <label>Shell dyes</label><br/>
                         </p>
                         <p>
-                          <label>Torpedo</label><br/>
+                          <label class="bold">Torpedo</label><br/>
                           <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
                           <label>Magnetic detonator</label><br/>
                           <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
                           <label>Homing torpedo</label><br/>
                         </p>
                         <p>
-                          <label>Mines</label><br/>
+                          <label class="bold">Mines</label><br/>
                           <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
                           <label>Torpedo tube mine deployment</label><br/>
                         </p>
@@ -1029,13 +1032,13 @@ class App extends Component {
                   <tbody>
                     <tr>
                       <td class="stats_cell">
-                        <label>Base Stats</label>
+                        <label class="bold">Base Stats</label>
                       </td>
                        <td class="stats_cell">
-                        <label>Combat Stats</label>
+                        <label class="bold">Combat Stats</label>
                       </td>
                        <td class="stats_cell">
-                        <label>Misc. Stats</label>
+                        <label class="bold">Misc. Stats</label>
                       </td>
                     </tr>
                     <tr>
@@ -1164,13 +1167,16 @@ class App extends Component {
                 </table>
               </td>
             </tr>
+            <tr>
+              <td>
+                <p><button id="calculate" onClick={() => this.refresh()}>Calculate</button></p>
+              </td>
+              <td>
+                <label id="isCapital"></label>
+              </td>
+            </tr>
           </tbody>
         </table>
-
-        <p><label id="isCapital"><br/></label></p>
-
-        <p><button onClick={() => this.refresh()}>Calculate</button></p>
-
       </div>
     ;
 
