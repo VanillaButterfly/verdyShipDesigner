@@ -2,11 +2,15 @@ h1, p, label {
   font-family: Lato;
 }
 select{
-  width: 14%;
+  width: 210px;
   border: 1px solid rgb(21, 90, 155);
 }
+.center{
+  margin: auto;
+  width:1470px
+}
 table{
-  width:100%
+  width:500px
 }
 td{
   width:33%

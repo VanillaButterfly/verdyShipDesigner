@@ -880,6 +880,9 @@ class App extends Component {
     if(this.ClassChecker() == "CL" || this.ClassChecker() == "DD"){
       document.getElementById('isCapital').innerHTML = "This vessel is a SCREEN ship";
     }
+    if(this.ClassChecker() == "SS"){
+      document.getElementById('isCapital').innerHTML = "This vessel is a SUBMARINE";
+    }
   }
 
   // Default render function that returns the html of the page. This function should NEVER BE CALLED ; to reload the page according to its return value, use: render(<App />, document.getElementById('root'))
@@ -895,44 +898,46 @@ class App extends Component {
         <p>HoI4 1.9.3 naval calculator</p>
         <br/>
 
-        <select onChange={() => this.swapper()} id="selectTest">
-          <option value="0">Early DD Hull</option>
-          <option value="1">1936 DD Hull</option>
-          <option value="2">1940 DD Hull</option>
-          <option value="3">1944 DD Hull</option>
-          <option value="4">Coastal Defense Ship</option>
-          <option value="5">Early Cruiser Hull</option>
-          <option value="6">1936 Cruiser Hull</option>
-          <option value="7">1940 Cruiser Hull</option>
-          <option value="8">1944 Cruiser Hull</option>
-          <option value="9">Torpedo Cruiser</option>
-          <option value="10">Panzerschiff</option>
-          <option value="11">Pre-Dreadnought</option>
-          <option value="12">Early BB Hull</option>
-          <option value="13">1936 BB Hull</option>
-          <option value="14">1940 BB Hull</option>
-          <option value="15">1944 BB Hull</option>
-          <option value="16">SH BB Hull</option>
-          <option value="17">Early SS Hull</option>
-          <option value="18">1936 SS Hull</option>
-          <option value="19">1940 SS Hull</option>
-          <option value="20">1944 SS Hull</option>
-          <option value="21">Cruiser Submarine</option>
-          <option value="22">Converted Cruiser Hull</option>
-          <option value="23">Converted BB Hull</option>
-          <option value="24">1936 CV Hull</option>
-          <option value="25">1940 CV Hull</option>
-          <option value="26">1944 CV Hull</option>
-        </select>
+        <div class="center">
+          <select onChange={() => this.swapper()} id="selectTest">
+            <option value="0">Early DD Hull</option>
+            <option value="1">1936 DD Hull</option>
+            <option value="2">1940 DD Hull</option>
+            <option value="3">1944 DD Hull</option>
+            <option value="4">Coastal Defense Ship</option>
+            <option value="5">Early Cruiser Hull</option>
+            <option value="6">1936 Cruiser Hull</option>
+            <option value="7">1940 Cruiser Hull</option>
+            <option value="8">1944 Cruiser Hull</option>
+            <option value="9">Torpedo Cruiser</option>
+            <option value="10">Panzerschiff</option>
+            <option value="11">Pre-Dreadnought</option>
+            <option value="12">Early BB Hull</option>
+            <option value="13">1936 BB Hull</option>
+            <option value="14">1940 BB Hull</option>
+            <option value="15">1944 BB Hull</option>
+            <option value="16">SH BB Hull</option>
+            <option value="17">Early SS Hull</option>
+            <option value="18">1936 SS Hull</option>
+            <option value="19">1940 SS Hull</option>
+            <option value="20">1944 SS Hull</option>
+            <option value="21">Cruiser Submarine</option>
+            <option value="22">Converted Cruiser Hull</option>
+            <option value="23">Converted BB Hull</option>
+            <option value="24">1936 CV Hull</option>
+            <option value="25">1940 CV Hull</option>
+            <option value="26">1944 CV Hull</option>
+          </select>
+        </div>
 
-        <br/>
         <br/>
       </div>
     ;
 
     var b =
       <div>
-        <p>
+        <br/>
+        <p class="center">
           <select id="doct">
           <option value="No_Doctrine">No doctrine</option>
           <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
@@ -1006,6 +1011,17 @@ class App extends Component {
 
         <table>
           <tbody>
+            <tr>
+              <td>
+                <label>Base Stats</label>
+              </td>
+              <td>
+                <label>Combat Stats</label>
+              </td>
+              <td>
+                <label>Misc. Stats</label>
+              </td>
+            </tr>
             <tr>
               <td>
                 <label>Max Speed : </label>
@@ -1131,7 +1147,7 @@ class App extends Component {
           </tbody>
         </table>
 
-        <p><label id="isCapital"></label></p>
+        <p><label id="isCapital"><br/></label></p>
 
         <p><button onClick={() => this.refresh()}>Calculate</button></p>
 
@@ -1152,7 +1168,7 @@ class App extends Component {
     //Early DD
     if(this.set == 0){
       var s =
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1260,7 +1276,7 @@ class App extends Component {
     //1936 DD
     if(this.set == 1){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1378,7 +1394,7 @@ class App extends Component {
     //1940 DD
     if (this.set == 2){
       var s =
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1509,7 +1525,7 @@ class App extends Component {
     //1944 DD
     if (this.set == 3){
       var s =
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1659,7 +1675,7 @@ class App extends Component {
     //Coastal Defense Ship
     if (this.set == 4){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1788,7 +1804,7 @@ class App extends Component {
     //Early Cruiser
     if (this.set == 5){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1956,7 +1972,7 @@ class App extends Component {
     //1936 Cruiser
     if (this.set == 6){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2141,7 +2157,7 @@ class App extends Component {
     //1940 Cruiser
     if (this.set == 7){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2348,7 +2364,7 @@ class App extends Component {
     //1944 Cruiser
     if (this.set == 8){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2555,7 +2571,7 @@ class App extends Component {
     //Torpedo Cruiser
     if (this.set == 9){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2688,7 +2704,7 @@ class App extends Component {
     //Panzerschiff
     if (this.set == 10){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2802,7 +2818,7 @@ class App extends Component {
     //Pre-Dreadnought
     if (this.set == 11){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2902,7 +2918,7 @@ class App extends Component {
     //Early BB
     if (this.set == 12){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3015,7 +3031,7 @@ class App extends Component {
     //1936 BB
     if (this.set == 13){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3141,7 +3157,7 @@ class App extends Component {
     //1940 BB
     if (this.set == 14){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3277,7 +3293,7 @@ class App extends Component {
     //1944 BB
     if (this.set == 15){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3416,7 +3432,7 @@ class App extends Component {
     //SH BB
     if (this.set == 16){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3537,7 +3553,7 @@ class App extends Component {
     //Early SS
     if (this.set == 17){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3601,7 +3617,7 @@ class App extends Component {
     //1936 SS
     if (this.set == 18){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3669,7 +3685,7 @@ class App extends Component {
     //1940 SS
     if (this.set == 19){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3744,7 +3760,7 @@ class App extends Component {
     //1944 SS
     if (this.set == 20){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3819,7 +3835,7 @@ class App extends Component {
     //Cruiser Submarine
     if (this.set == 21){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3900,7 +3916,7 @@ class App extends Component {
     // Converted Cruiser
     if (this.set == 22){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Locked">Locked</option>
         </select>
@@ -3973,7 +3989,7 @@ class App extends Component {
     //Converted Battleship
     if (this.set == 23){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4051,7 +4067,7 @@ class App extends Component {
     //1936 CV
     if (this.set == 24){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4125,7 +4141,7 @@ class App extends Component {
     //1940 CV
     if (this.set == 25){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -4205,7 +4221,7 @@ class App extends Component {
     //1944 CV
     if (this.set == 26){
       var s = 
-      <div>
+      <div class="center">
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
