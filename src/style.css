@@ -1,13 +1,25 @@
 h1, p, label {
   font-family: Lato;
 }
-select{
+#title{
+  margin: auto;
+  text-align: center;
+}select{
   width: 210px;
   border: 1px solid rgb(21, 90, 155);
 }
 .center{
   margin: auto;
   width:1470px
+}
+#desi{
+  margin-left:210px
+}
+#techno{
+  width:700px
+}
+.techno_cell{
+  width:50%
 }
 table{
   width:500px

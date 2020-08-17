@@ -895,7 +895,7 @@ class App extends Component {
 
     var a =
       <div>
-        <p>HoI4 1.9.3 naval calculator</p>
+        <p id="title">Hearts of Iron IV 1.9.3 naval calculator</p>
         <br/>
 
         <div class="center">
@@ -940,74 +940,79 @@ class App extends Component {
         <p class="center">
           <select id="doct">
           <option value="No_Doctrine">No doctrine</option>
-          <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
           <option value="Fleet_in_Being_Doctrine">Fleet in being</option>
+          <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
           <option value="Base_Strike_Doctrine">Base strike</option>
           </select>
 
           <select id="desi">
           <option value="No_Designer">No designer</option>
-          <option value="Pacific_fleet_Designer">Pacific fleet designer</option>
           <option value="Atlantic_fleet_Designer">Atlantic fleet designer</option>
           <option value="Battlefleet_Designer">Battlefleet designer</option>
-          <option value="Raiding_fleet_Designer">Raiding fleet designer</option>
-          <option value="Convoy_escort_fleet_Designer">Convoy escort fleet designer</option>
           <option value="Coastal_defence_fleet_Designer">Coastal defence fleet designer</option>
+          <option value="Convoy_escort_fleet_Designer">Convoy escort fleet designer</option>
           <option value="Mediterranean_fleet_Designer">Mediterranean fleet designer</option>
-          <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
+          <option value="Pacific_fleet_Designer">Pacific fleet designer</option>
+          <option value="Raiding_fleet_Designer">Raiding fleet designer</option>
           <option value="Romanian_Black_Sea_dominance_Designer">Braila shipyards</option>
+          <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
           </select>
         </p>
 
         <p> Technologies : </p>
 
-        <p>
-          <label>Torpedo</label><br/>
-          <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
-          <label>Magnetic detonator</label><br/>
-          <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
-          <label>Homing torpedo</label><br/>
-        </p>
-
-        <p>
-          <label>Light shell</label><br/>
-          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
-          <label>Small caliber semi armor piercing shell</label><br/>
-          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
-          <label>Small caliber armor piercing shell</label><br/>
-        </p>
-
-        <p>
-          <label>Medium shell</label><br/>
-          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
-          <label>Armor piercing capped medium shell</label><br/>
-          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
-          <label>Medium caliber semi armor piercing shell</label><br/>
-        </p>
-
-        <p>
-          <label>Heavy shell</label><br/>
-          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
-          <label>Armor piercing capped shell</label><br/>
-          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
-          <label>Super heavy armor piercing shell</label><br/>
-        </p>
-
-        <p>
-          <label>Fire control methods</label><br/>
-          <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
-          <label>Bracket shooting</label><br/>
-          <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
-          <label>Ladder shooting</label><br/>
-          <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
-          <label>Shell dyes</label><br/>
-        </p>
-
-        <p>
-          <label>Mines</label><br/>
-          <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
-          <label>Torpedo tube mine deployment</label><br/>
-        </p>
+        <table id="techno">
+          <tbody>
+            <tr>
+              <td class="techno_cell">
+                <p>
+                  <label>Light shell</label><br/>
+                  <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
+                  <label>Small caliber semi armor piercing shell</label><br/>
+                  <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+                  <label>Small caliber armor piercing shell</label><br/>
+                </p>
+                <p>
+                  <label>Medium shell</label><br/>
+                  <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
+                  <label>Armor piercing capped medium shell</label><br/>
+                  <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+                  <label>Medium caliber semi armor piercing shell</label><br/>
+                </p>
+                <p>
+                  <label>Heavy shell</label><br/>
+                  <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
+                  <label>Armor piercing capped shell</label><br/>
+                  <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+                  <label>Super heavy armor piercing shell</label><br/>
+                </p>
+              </td>
+              <td class="techno_cell">
+                <p>
+                  <label>Fire control methods</label><br/>
+                  <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
+                  <label>Bracket shooting</label><br/>
+                  <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
+                  <label>Ladder shooting</label><br/>
+                  <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
+                  <label>Shell dyes</label><br/>
+                </p>
+                <p>
+                  <label>Torpedo</label><br/>
+                  <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
+                  <label>Magnetic detonator</label><br/>
+                  <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
+                  <label>Homing torpedo</label><br/>
+                </p>
+                <p>
+                  <label>Mines</label><br/>
+                  <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
+                  <label>Torpedo tube mine deployment</label><br/>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <table>
           <tbody>
