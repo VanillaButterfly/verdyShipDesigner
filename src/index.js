@@ -601,10 +601,28 @@ class App extends Component {
     var str = (num*100).toString()
     for(var i = 0 ; i<str.length; i++){
       if(str.charAt(i) == '.'){
-        return(str.substring(0,i)+"%")
+        return(str.substring(0,i)+" %")
       }
     }
-    return (str+"%")
+    return (str+" %")
+  }
+  decimalCutToKn(num){
+    var str = (num).toString()
+    for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        return(str.substring(0,i)+" kn")
+      }
+    }
+    return (str+" kn")
+  }
+  decimalCutToKm(num){
+    var str = num.toString()
+    for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        return(str.substring(0,i)+" km")
+      }
+    }
+    return (str+" km")
   }
 
 
@@ -829,8 +847,8 @@ class App extends Component {
 
     // Writes all the values into the html for the user to see
 
-    document.getElementById('naval_speed').innerHTML = this.decimalCutToTwo(finalstat["naval_speed"]);
-    document.getElementById('naval_range').innerHTML = this.decimalCutToNone(finalstat["naval_range"]);
+    document.getElementById('naval_speed').innerHTML = this.decimalCutToKn(finalstat["naval_speed"]);
+    document.getElementById('naval_range').innerHTML = this.decimalCutToKm(finalstat["naval_range"]);
     document.getElementById('max_organisation').innerHTML = this.decimalCutToTwo(finalstat["max_organisation"]);
     document.getElementById('max_strength').innerHTML = this.decimalCutToTwo(finalstat["max_strength"]);
     document.getElementById('reliability').innerHTML = this.decimalCutToPercentage(finalstat["reliability"]);
@@ -874,6 +892,9 @@ class App extends Component {
 
     var a =
       <div>
+        <p>HoI4 1.9.3 naval calculator</p>
+        <br/>
+
         <select onChange={() => this.swapper()} id="selectTest">
           <option value="0">Early DD Hull</option>
           <option value="1">1936 DD Hull</option>
@@ -989,7 +1010,6 @@ class App extends Component {
               <td>
                 <label>Max Speed : </label>
                 <label id='naval_speed'></label>
-                <label> kn</label>
               </td>
               <td>
                 <label>Light Attack : </label>
@@ -1004,7 +1024,6 @@ class App extends Component {
               <td>
                 <label>Max Range : </label>
                 <label id='naval_range'></label>
-                <label> km</label>
               </td>
               <td>
                 <label>Light Piercing : </label>
