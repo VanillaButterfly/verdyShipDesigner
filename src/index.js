@@ -894,13 +894,14 @@ class App extends Component {
     ;
 
     var a =
-      <div>
-        <p id="title">Naval calculator</p>
-        <p id="title">Hearts of Iron IV 1.9.3</p>
+      <div onClick={() => this.refresh()}>
+        <div class="title">
+          <br/>
+          <p id="title1">Naval calculator</p>
+          <p id="title2">Hearts of Iron IV 1.9.3</p>
+          <br/>
+        </div>
         <br/>
-        <br/>
-        <br/>
-
         <div class="center">
           <select onChange={() => this.swapper()} id="selectTest">
             <option value="0">Early DD Hull</option>
@@ -932,37 +933,15 @@ class App extends Component {
             <option value="26">1944 CV Hull</option>
           </select>
         </div>
-
+        <br/>
         <br/>
       </div>
     ;
 
     var b =
-      <div class="center">
+      <div class="center" onClick={() => this.refresh()}>
         <br/>
-        <p>
-          <select id="doct">
-          <option value="No_Doctrine">No doctrine</option>
-          <option value="Fleet_in_Being_Doctrine">Fleet in being</option>
-          <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
-          <option value="Base_Strike_Doctrine">Base strike</option>
-          </select>
-
-          <select id="desi">
-          <option value="No_Designer">No designer</option>
-          <option value="Atlantic_fleet_Designer">Atlantic fleet designer</option>
-          <option value="Battlefleet_Designer">Battlefleet designer</option>
-          <option value="Coastal_defence_fleet_Designer">Coastal defence fleet designer</option>
-          <option value="Convoy_escort_fleet_Designer">Convoy escort fleet designer</option>
-          <option value="Mediterranean_fleet_Designer">Mediterranean fleet designer</option>
-          <option value="Pacific_fleet_Designer">Pacific fleet designer</option>
-          <option value="Raiding_fleet_Designer">Raiding fleet designer</option>
-          <option value="Romanian_Black_Sea_dominance_Designer">Braila shipyards</option>
-          <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
-          </select>
-        </p>
         <br/>
-
         <table>
           <tbody>
             <tr>
@@ -971,37 +950,31 @@ class App extends Component {
                   <tbody>
                     <tr>
                       <td class="techno_cell">
-                        <label class="bold"> Technologies : </label>
-                      </td>
-                      <td class="techno_cell">
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="techno_cell">
-                        <p>
-                          <label class="bold">Light shell</label><br/>
-                          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
-                          <label>Small caliber semi armor piercing shell</label><br/>
-                          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
-                          <label>Small caliber armor piercing shell</label><br/>
+                        <p class="tech_names">
+                          <label class="bold">Designer</label><br/>
+                          <select id="desi">
+                            <option value="No_Designer">No designer</option>
+                            <option value="Atlantic_fleet_Designer">Atlantic fleet designer</option>
+                            <option value="Battlefleet_Designer">Battlefleet designer</option>
+                            <option value="Coastal_defence_fleet_Designer">Coastal defence fleet designer</option>
+                            <option value="Convoy_escort_fleet_Designer">Convoy escort fleet designer</option>
+                            <option value="Mediterranean_fleet_Designer">Mediterranean fleet designer</option>
+                            <option value="Pacific_fleet_Designer">Pacific fleet designer</option>
+                            <option value="Raiding_fleet_Designer">Raiding fleet designer</option>
+                            <option value="Romanian_Black_Sea_dominance_Designer">Braila shipyards</option>
+                            <option value="Romanian_coastal_defence_fleet_Designer">Galati shipyard</option>
+                          </select>
                         </p>
-                        <p>
-                          <label class="bold">Medium shell</label><br/>
-                          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
-                          <label>Armor piercing capped medium shell</label><br/>
-                          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
-                          <label>Medium caliber semi armor piercing shell</label><br/>
+                        <p class="tech_names">
+                          <label class="bold">Doctrine</label><br/>
+                          <select id="doct">
+                            <option value="No_Doctrine">No doctrine</option>
+                            <option value="Fleet_in_Being_Doctrine">Fleet in being</option>
+                            <option value="Trade_Interdiction_Doctrine">Trade interdiction</option>
+                            <option value="Base_Strike_Doctrine">Base strike</option>
+                          </select>
                         </p>
-                        <p>
-                          <label class="bold">Heavy shell</label><br/>
-                          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
-                          <label>Armor piercing capped shell</label><br/>
-                          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
-                          <label>Super heavy armor piercing shell</label><br/>
-                        </p>
-                      </td>
-                      <td class="techno_cell">
-                        <p>
+                        <p class="tech_names">
                           <label class="bold">Fire control methods</label><br/>
                           <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
                           <label>Bracket shooting</label><br/>
@@ -1010,14 +983,37 @@ class App extends Component {
                           <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
                           <label>Shell dyes</label><br/>
                         </p>
-                        <p>
+                        <p class="tech_names">
                           <label class="bold">Torpedo</label><br/>
                           <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
                           <label>Magnetic detonator</label><br/>
                           <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
                           <label>Homing torpedo</label><br/>
                         </p>
-                        <p>
+                      </td>
+                      <td class="techno_cell">
+                        <p class="tech_names">
+                          <label class="bold">Light shell</label><br/>
+                          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
+                          <label>Small caliber semi armor piercing shell</label><br/>
+                          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+                          <label>Small caliber armor piercing shell</label><br/>
+                        </p>
+                        <p class="tech_names">
+                          <label class="bold">Medium shell</label><br/>
+                          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
+                          <label>Armor piercing capped medium shell</label><br/>
+                          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+                          <label>Medium caliber semi armor piercing shell</label><br/>
+                        </p>
+                        <p class="tech_names">
+                          <label class="bold">Heavy shell</label><br/>
+                          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
+                          <label>Armor piercing capped shell</label><br/>
+                          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+                          <label>Super heavy armor piercing shell</label><br/>
+                        </p>
+                        <p class="tech_names">
                           <label class="bold">Mines</label><br/>
                           <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
                           <label>Torpedo tube mine deployment</label><br/>
@@ -1044,123 +1040,123 @@ class App extends Component {
                     <tr>
                        <td class="stats_cell">
                         <label>Max Speed : </label>
-                        <label id='naval_speed'></label>
+                        <label id='naval_speed'>0 kn</label>
                       </td>
                        <td class="stats_cell">
                         <label>Light Attack : </label>
-                        <label id='lg_attack'></label>
+                        <label id='lg_attack'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Fuel Usage : </label>
-                        <label id='fuel_consumption'></label>
+                        <label id='fuel_consumption'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Max Range : </label>
-                        <label id='naval_range'></label>
+                        <label id='naval_range'>0 km</label>
                       </td>
                        <td class="stats_cell">
                         <label>Light Piercing : </label>
-                        <label id='lg_armor_piercing'></label>
+                        <label id='lg_armor_piercing'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Surface Visibility : </label>
-                        <label id='surface_visibility'></label>
+                        <label id='surface_visibility'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Organization : </label>
-                        <label id='max_organisation'></label>
+                        <label id='max_organisation'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Heavy Attack : </label>
-                        <label id='hg_attack'></label>
+                        <label id='hg_attack'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Surface Detection : </label>
-                        <label id='surface_detection'></label>
+                        <label id='surface_detection'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>HP : </label>
-                        <label id='max_strength'></label>
+                        <label id='max_strength'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Heavy Piercing : </label>
-                        <label id='hg_armor_piercing'></label>
+                        <label id='hg_armor_piercing'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Sub Visibility : </label>
-                        <label id='sub_visibility'></label>
+                        <label id='sub_visibility'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Reliability : </label>
-                        <label id='reliability'></label>
+                        <label id='reliability'>0 %</label>
                       </td>
                        <td class="stats_cell">
                         <label>Torpedo Attack : </label>
-                        <label id='torpedo_attack'></label>
+                        <label id='torpedo_attack'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Sub Detection : </label>
-                        <label id='sub_detection'></label>
+                        <label id='sub_detection'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Supply Use : </label>
-                        <label id='supply_consumption'></label>
+                        <label id='supply_consumption'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Depth Charges : </label>
-                        <label id='sub_attack'></label>
+                        <label id='sub_attack'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Minelaying : </label>
-                        <label id='mines_planting'></label>
+                        <label id='mines_planting'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Manpower : </label>
-                        <label id='manpower'></label>
+                        <label id='manpower'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Armor : </label>
-                        <label id='armor_value'></label>
+                        <label id='armor_value'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Minesweeping : </label>
-                        <label id='mines_sweeping'></label>
+                        <label id='mines_sweeping'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Deck Size : </label>
-                        <label id='carrier_size'></label>
+                        <label id='carrier_size'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Anti-Air : </label>
-                        <label id='anti_air_attack'></label>
+                        <label id='anti_air_attack'>0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Steel : </label>
-                        <label id='steel'></label>
+                        <label id='steel'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Chromium : </label>
-                        <label id='chromium'></label>
+                        <label id='chromium'>0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Production Cost : </label>
-                        <label id='build_cost_ic'></label>
+                        <label id='build_cost_ic'>0</label>
                       </td>
                     </tr>
                   </tbody>
@@ -1169,7 +1165,6 @@ class App extends Component {
             </tr>
             <tr>
               <td>
-                <p><button id="calculate" onClick={() => this.refresh()}>Calculate</button></p>
               </td>
               <td>
                 <label id="isCapital"></label>
@@ -1194,7 +1189,7 @@ class App extends Component {
     //Early DD
     if(this.set == 0){
       var s =
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1245,7 +1240,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -1302,7 +1297,7 @@ class App extends Component {
     //1936 DD
     if(this.set == 1){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1363,7 +1358,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -1420,7 +1415,7 @@ class App extends Component {
     //1940 DD
     if (this.set == 2){
       var s =
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1494,7 +1489,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -1551,7 +1546,7 @@ class App extends Component {
     //1944 DD
     if (this.set == 3){
       var s =
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1644,7 +1639,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -1701,7 +1696,7 @@ class App extends Component {
     //Coastal Defense Ship
     if (this.set == 4){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1764,7 +1759,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
@@ -1830,7 +1825,7 @@ class App extends Component {
     //Early Cruiser
     if (this.set == 5){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -1931,7 +1926,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -1998,7 +1993,7 @@ class App extends Component {
     //1936 Cruiser
     if (this.set == 6){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2116,7 +2111,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -2183,7 +2178,7 @@ class App extends Component {
     //1940 Cruiser
     if (this.set == 7){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2323,7 +2318,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -2390,7 +2385,7 @@ class App extends Component {
     //1944 Cruiser
     if (this.set == 8){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2530,7 +2525,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -2597,7 +2592,7 @@ class App extends Component {
     //Torpedo Cruiser
     if (this.set == 9){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2663,7 +2658,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Light_Battery_1">Light Battery 1</option>
@@ -2730,7 +2725,7 @@ class App extends Component {
     //Panzerschiff
     if (this.set == 10){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2786,7 +2781,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -2844,7 +2839,7 @@ class App extends Component {
     //Pre-Dreadnought
     if (this.set == 11){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -2890,7 +2885,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -2944,7 +2939,7 @@ class App extends Component {
     //Early BB
     if (this.set == 12){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3001,7 +2996,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -3057,7 +3052,7 @@ class App extends Component {
     //1936 BB
     if (this.set == 13){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3127,7 +3122,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -3183,7 +3178,7 @@ class App extends Component {
     //1940 BB
     if (this.set == 14){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3263,7 +3258,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -3319,7 +3314,7 @@ class App extends Component {
     //1944 BB
     if (this.set == 15){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3402,7 +3397,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Heavy_Battery_1">Heavy Battery 1</option>
@@ -3458,7 +3453,7 @@ class App extends Component {
     //SH BB
     if (this.set == 16){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -3532,7 +3527,7 @@ class App extends Component {
           <option value="SH_Battery">Super Heavy Battery</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="SH_Battery">Super Heavy Battery</option>
@@ -3579,7 +3574,7 @@ class App extends Component {
     //Early SS
     if (this.set == 17){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3607,7 +3602,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
@@ -3643,7 +3638,7 @@ class App extends Component {
     //1936 SS
     if (this.set == 18){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3675,7 +3670,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
@@ -3711,7 +3706,7 @@ class App extends Component {
     //1940 SS
     if (this.set == 19){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3750,7 +3745,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
@@ -3786,7 +3781,7 @@ class App extends Component {
     //1944 SS
     if (this.set == 20){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3825,7 +3820,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
@@ -3861,7 +3856,7 @@ class App extends Component {
     //Cruiser Submarine
     if (this.set == 21){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3906,7 +3901,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
@@ -3942,7 +3937,7 @@ class App extends Component {
     // Converted Cruiser
     if (this.set == 22){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Locked">Locked</option>
         </select>
@@ -3965,7 +3960,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Hangar_Space">Hangar Space</option>
@@ -4015,7 +4010,7 @@ class App extends Component {
     //Converted Battleship
     if (this.set == 23){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4043,7 +4038,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Hangar_Space">Hangar Space</option>
@@ -4093,7 +4088,7 @@ class App extends Component {
     //1936 CV
     if (this.set == 24){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4121,7 +4116,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Hangar_Space">Hangar Space</option>
@@ -4167,7 +4162,7 @@ class App extends Component {
     //1940 CV
     if (this.set == 25){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -4201,7 +4196,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Hangar_Space">Hangar Space</option>
@@ -4247,7 +4242,7 @@ class App extends Component {
     //1944 CV
     if (this.set == 26){
       var s = 
-      <div class="center">
+      <div class="center nojump" onClick={() => this.refresh()}>
         <select id="slot1">
           <option value="Empty">Empty</option>
           <option value="Anti_Air_1">Anti-Air 1</option>
@@ -4286,7 +4281,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <br></br>
+        <br/>
 
         <select id="slot8">
           <option value="Hangar_Space">Hangar Space</option>

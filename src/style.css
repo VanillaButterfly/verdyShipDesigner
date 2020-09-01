@@ -1,44 +1,55 @@
-h1, p, label {
+h1, p, label, select {
   font-family: Lato;
+  color: #181818;
 }
-#title{
+body {
+  margin: 0;
+}
+.title{
+  background-color: #dadada;
+}
+#title1{
   margin: auto;
   text-align: center;
-  font-size: 30px
+  font-size: 36px;
+  color: #155a9b;
+}#title2{
+  margin: auto;
+  text-align: center;
+  font-size: 26px;
+  color: #155a9b;
 }select{
   width: 210px;
-  border: 1px solid rgb(21, 90, 155);
-  margin-top:1px;
+  border: 1px solid #155a9b;
 }
 .center{
   margin: auto;
-  width:1470px
+  width:1470px;
+}
+.nojump{
+  line-height:0;
 }
 .bold{
-  font-weight: bold
-}
-#desi{
-  margin-left:210px
+  font-weight: bold;
 }
 table{
-  width:1470px
+  width:1470px;
 }
 td{
-  width:57%
+  width:57%;
 }
 #techno{
-  width:700px
+  width:840px;
 }
 .techno_cell{
-  width:50%
+  width:50%;
 }
 #stats{
-  width:500px
+  width:630px;
 }
 .stats_cell{
-  width:33%
+  width:33%;
 }
-#calculate{
-  padding:7px 20px;
-  font-size: 16px
+.tech_names{
+  line-height:1.4;
 }
