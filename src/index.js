@@ -1240,6 +1240,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
         <br/>
 
         <select id="slot8">
@@ -1358,6 +1359,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
         <br/>
 
         <select id="slot8">
@@ -1489,6 +1491,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
         <br/>
 
         <select id="slot8">
@@ -1639,6 +1642,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
         <br/>
 
         <select id="slot8">
@@ -1759,6 +1763,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -1926,6 +1931,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2111,6 +2117,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2318,6 +2325,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2525,6 +2533,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2658,6 +2667,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2781,6 +2791,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2885,6 +2896,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
         <br/>
 
         <select id="slot8">
@@ -2996,6 +3008,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3122,6 +3135,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3258,6 +3272,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3397,6 +3412,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3527,6 +3543,7 @@ class App extends Component {
           <option value="SH_Battery">Super Heavy Battery</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/shbatt10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3602,6 +3619,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3670,6 +3688,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3745,6 +3764,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3820,6 +3840,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3901,6 +3922,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
         <br/>
 
         <select id="slot8">
@@ -3960,6 +3982,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
         <br/>
 
         <select id="slot8">
@@ -4038,6 +4061,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
         <br/>
 
         <select id="slot8">
@@ -4116,6 +4140,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
         <br/>
 
         <select id="slot8">
@@ -4196,6 +4221,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
         <br/>
 
         <select id="slot8">
@@ -4281,6 +4307,7 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
+        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
         <br/>
 
         <select id="slot8">
