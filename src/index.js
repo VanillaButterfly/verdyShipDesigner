@@ -983,45 +983,89 @@ class App extends Component {
                             <span class="checkmark"></span>
                           </label>
                           <br/>
-                          <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
-                          <label>Ladder shooting</label><br/>
-                          <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
-                          <label>Shell dyes</label><br/>
+                          <label class="container">
+                            Ladder shooting
+                            <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Shell dyes
+                            <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Torpedo</label><br/>
-                          <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
-                          <label>Magnetic detonator</label><br/>
-                          <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
-                          <label>Homing torpedo</label><br/>
+                          <label class="container">
+                            Magnetic detonator
+                            <input type="checkbox" id="magnetic_detonator" value="Torpedo_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Homing torpedo
+                            <input type="checkbox" id="homing_torpedo" value="Torpedo_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                       </td>
                       <td class="techno_cell">
                         <p class="tech_names">
                           <label class="bold">Light shell</label><br/>
-                          <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
-                          <label>Small caliber semi armor piercing shell</label><br/>
-                          <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
-                          <label>Small caliber armor piercing shell</label><br/>
+                          <label class="container">
+                            Small caliber semi armor piercing shell
+                            <input type="checkbox" id="basic_light_shell" value="Light_shell_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Small caliber armor piercing shell
+                            <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Medium shell</label><br/>
-                          <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
-                          <label>Armor piercing capped medium shell</label><br/>
-                          <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
-                          <label>Medium caliber semi armor piercing shell</label><br/>
+                          <label class="container">
+                            Armor piercing capped medium shell
+                            <input type="checkbox" id="basic_medium_shell" value="Medium_shell_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Medium caliber semi armor piercing shell
+                            <input type="checkbox" id="improved_medium_shell" value="Medium_shell_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Heavy shell</label><br/>
-                          <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
-                          <label>Armor piercing capped shell</label><br/>
-                          <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
-                          <label>Super heavy armor piercing shell</label><br/>
+                          <label class="container">
+                            Armor piercing capped shell
+                            <input type="checkbox" id="basic_heavy_shell" value="Heavy_shell_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
+                          <label class="container">
+                            Super heavy armor piercing shell
+                            <input type="checkbox" id="improved_heavy_shell" value="Heavy_shell_2"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                         <p class="tech_names">
                           <label class="bold">Mines</label><br/>
-                          <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
-                          <label>Torpedo tube mine deployment</label><br/>
+                          <label class="container">
+                            Torpedo tube mine deployment
+                            <input type="checkbox" id="improved_submarine_mine_laying" value="Mines_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                         </p>
                       </td>
                     </tr>
