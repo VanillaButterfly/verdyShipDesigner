@@ -604,7 +604,7 @@ class App extends Component {
         return(str.substring(0,i+2)+" %")
       }
     }
-    return (str)
+    return (str+" %")
   }
   decimalCutToKn(num){
     var str = num.toString()
@@ -613,7 +613,7 @@ class App extends Component {
         return(str.substring(0,i+2)+" kn")
       }
     }
-    return (str)
+    return (str+" kn")
   }
   decimalCutToKm(num){
     var str = num.toString()
