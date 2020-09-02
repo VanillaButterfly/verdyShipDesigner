@@ -600,20 +600,20 @@ class App extends Component {
   decimalCutToPercentage(num){
     var str = (num*100).toString()
     for(var i = 0 ; i<str.length; i++){
-      if(str.charAt(i) == '.'){
-        return(str.substring(0,i)+" %")
+      if(str.charAt(i) == '.' && str.length-1-i>1){
+        return(str.substring(0,i+2)+" %")
       }
     }
-    return (str+" %")
+    return (str)
   }
   decimalCutToKn(num){
-    var str = (num).toString()
+    var str = num.toString()
     for(var i = 0 ; i<str.length; i++){
-      if(str.charAt(i) == '.'){
-        return(str.substring(0,i)+" kn")
+      if(str.charAt(i) == '.' && str.length-1-i>1){
+        return(str.substring(0,i+2)+" kn")
       }
     }
-    return (str+" kn")
+    return (str)
   }
   decimalCutToKm(num){
     var str = num.toString()
