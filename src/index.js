@@ -882,7 +882,7 @@ class App extends Component {
     document.getElementById('reliability').innerHTML = this.decimalCutToPercentage(finalstat["reliability"]);
     document.getElementById('supply_consumption').innerHTML = this.decimalCutToThree(finalstat["supply_consumption"]);
     document.getElementById('manpower').innerHTML = this.decimalCutToNone(finalstat["manpower"]);
-    document.getElementById('carrier_size').innerHTML = this.decimalCutToTwo(finalstat["carrier_size"]);
+    document.getElementById('carrier_size').innerHTML = this.decimalCutToNone(finalstat["carrier_size"]);
     document.getElementById('lg_attack').innerHTML = this.decimalCutToTwo(finalstat["lg_attack"]);
     document.getElementById('lg_armor_piercing').innerHTML = this.decimalCutToTwo(finalstat["lg_armor_piercing"]);
     document.getElementById('hg_attack').innerHTML = this.decimalCutToTwo(finalstat["hg_attack"]);
@@ -1114,15 +1114,15 @@ class App extends Component {
                     <tr>
                        <td class="stats_cell">
                         <label>Max Speed : </label>
-                        <label id='naval_speed'>36 kn</label>
+                        <label id='naval_speed'>36.0 kn</label>
                       </td>
                        <td class="stats_cell">
                         <label>Light Attack : </label>
-                        <label id='lg_attack'>1</label>
+                        <label id='lg_attack'>1.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Fuel Usage : </label>
-                        <label id='fuel_consumption'>7</label>
+                        <label id='fuel_consumption'>7.0</label>
                       </td>
                     </tr>
                     <tr>
@@ -1132,53 +1132,53 @@ class App extends Component {
                       </td>
                        <td class="stats_cell">
                         <label>Light Piercing : </label>
-                        <label id='lg_armor_piercing'>1</label>
+                        <label id='lg_armor_piercing'>1.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Surface Visibility : </label>
-                        <label id='surface_visibility'>10</label>
+                        <label id='surface_visibility'>10.0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Organization : </label>
-                        <label id='max_organisation'>40</label>
+                        <label id='max_organisation'>40.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Heavy Attack : </label>
-                        <label id='hg_attack'>0</label>
+                        <label id='hg_attack'>0.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Surface Detection : </label>
-                        <label id='surface_detection'>20</label>
+                        <label id='surface_detection'>20.0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>HP : </label>
-                        <label id='max_strength'>25</label>
+                        <label id='max_strength'>25.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Heavy Piercing : </label>
-                        <label id='hg_armor_piercing'>0</label>
+                        <label id='hg_armor_piercing'>0.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Sub Visibility : </label>
-                        <label id='sub_visibility'>0</label>
+                        <label id='sub_visibility'>0.0</label>
                       </td>
                     </tr>
                     <tr>
                        <td class="stats_cell">
                         <label>Reliability : </label>
-                        <label id='reliability'>64 %</label>
+                        <label id='reliability'>64.0 %</label>
                       </td>
                        <td class="stats_cell">
                         <label>Torpedo Attack : </label>
-                        <label id='torpedo_attack'>0</label>
+                        <label id='torpedo_attack'>0.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Sub Detection : </label>
-                        <label id='sub_detection'>1</label>
+                        <label id='sub_detection'>1.0</label>
                       </td>
                     </tr>
                     <tr>
@@ -1188,11 +1188,11 @@ class App extends Component {
                       </td>
                        <td class="stats_cell">
                         <label>Depth Charges : </label>
-                        <label id='sub_attack'>1</label>
+                        <label id='sub_attack'>1.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Minelaying : </label>
-                        <label id='mines_planting'>0</label>
+                        <label id='mines_planting'>0.00</label>
                       </td>
                     </tr>
                     <tr>
@@ -1202,11 +1202,11 @@ class App extends Component {
                       </td>
                        <td class="stats_cell">
                         <label>Armor : </label>
-                        <label id='armor_value'>0</label>
+                        <label id='armor_value'>0.0</label>
                       </td>
                        <td class="stats_cell">
                         <label>Minesweeping : </label>
-                        <label id='mines_sweeping'>0</label>
+                        <label id='mines_sweeping'>0.00</label>
                       </td>
                     </tr>
                     <tr>
@@ -1216,7 +1216,7 @@ class App extends Component {
                       </td>
                        <td class="stats_cell">
                         <label>Anti-Air : </label>
-                        <label id='anti_air_attack'>0</label>
+                        <label id='anti_air_attack'>0.0</label>
                       </td>
                     </tr>
                     <tr>
