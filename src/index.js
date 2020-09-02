@@ -571,22 +571,36 @@ class App extends Component {
   }
 
   decimalCutToThree(num){
+    var hasdec = false;
     var str = num.toString()
     for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        hasdec = true;
+      }
       if(str.charAt(i) == '.' && str.length-1-i>2){
         return(str.substring(0,i+3))
       }
     }
-    return (str)
+    if (hasdec){
+      return (str)
+    }
+    return (str + ".00")
   }
   decimalCutToTwo(num){
+    var hasdec = false;
     var str = num.toString()
     for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        hasdec = true;
+      }
       if(str.charAt(i) == '.' && str.length-1-i>1){
         return(str.substring(0,i+2))
       }
     }
-    return (str)
+    if (hasdec){
+      return (str)
+    }
+    return (str + ".0")
   }
   decimalCutToNone(num){
     var str = num.toString()
@@ -598,22 +612,36 @@ class App extends Component {
     return (str)
   }
   decimalCutToPercentage(num){
+    var hasdec = false;
     var str = (num*100).toString()
     for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        hasdec = true;
+      }
       if(str.charAt(i) == '.' && str.length-1-i>1){
         return(str.substring(0,i+2)+" %")
       }
     }
-    return (str+" %")
+    if (hasdec){
+      return (str+" %")
+    }
+    return (str+".0 %")
   }
   decimalCutToKn(num){
+    var hasdec = false;
     var str = num.toString()
     for(var i = 0 ; i<str.length; i++){
+      if(str.charAt(i) == '.'){
+        hasdec = true;
+      }
       if(str.charAt(i) == '.' && str.length-1-i>1){
         return(str.substring(0,i+2)+" kn")
       }
     }
-    return (str+" kn")
+    if (hasdec){
+      return (str+" kn")
+    }
+    return (str+".0 kn")
   }
   decimalCutToKm(num){
     var str = num.toString()
