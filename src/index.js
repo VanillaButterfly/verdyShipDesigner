@@ -977,8 +977,12 @@ class App extends Component {
                         </p>
                         <p class="tech_names">
                           <label class="bold">Fire control methods</label><br/>
-                          <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
-                          <label>Bracket shooting</label><br/>
+                          <label class="container">
+                            Bracket shooting
+                            <input type="checkbox" id="bracket_shooting" value="Fire_control_methods_1"></input>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br/>
                           <input type="checkbox" id="ladder_shooting" value="Fire_control_methods_2"></input>
                           <label>Ladder shooting</label><br/>
                           <input type="checkbox" id="shell_dyes" value="Fire_control_methods_3"></input>
