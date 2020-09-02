@@ -32,6 +32,9 @@ body {
 .bold{
   font-weight: bold;
 }
+.grey{
+  background-color: #dadada;
+}
 table{
   width:1470px;
 }
