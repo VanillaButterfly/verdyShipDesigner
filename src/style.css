@@ -44,10 +44,6 @@ h1, p, label, select {
 .container:hover input:checked ~ .checkmark {
   border: 1px solid #0078d7;
 }
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #ffffff;
-}
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
