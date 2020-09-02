@@ -875,13 +875,10 @@ class App extends Component {
     document.getElementById('chromium').innerHTML = this.decimalCutToNone(finalstat["chromium"]);
 
     if(this.ClassChecker() == "CA" || this.ClassChecker() == "BB" || this.ClassChecker() == "BC" || this.ClassChecker() == "CV"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a capital ship";
+      document.getElementById('isCapital').innerHTML = "<img class=\"capital\" src=\"https://i12.servimg.com/u/f12/19/44/96/17/capita10.png\"/>";
     }
-    if(this.ClassChecker() == "CL" || this.ClassChecker() == "DD"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a screen ship";
-    }
-    if(this.ClassChecker() == "SS"){
-      document.getElementById('isCapital').innerHTML = "This vessel is a submarine";
+    else{
+      document.getElementById('isCapital').innerHTML = "<img class=\"capital\" src=\"https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png\"/>";
     }
   }
 
@@ -1212,13 +1209,6 @@ class App extends Component {
                 </table>
               </td>
             </tr>
-            <tr>
-              <td>
-              </td>
-              <td>
-                <label id="isCapital"></label>
-              </td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -1289,7 +1279,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -1408,7 +1401,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -1540,7 +1536,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -1691,7 +1690,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/destro10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -1812,7 +1814,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -1980,7 +1985,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2166,7 +2174,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2374,7 +2385,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2582,7 +2596,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2716,7 +2733,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2840,7 +2860,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/cruise10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -2945,7 +2968,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3057,7 +3083,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3184,7 +3213,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3321,7 +3353,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3461,7 +3496,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/battle10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3592,7 +3630,10 @@ class App extends Component {
           <option value="SH_Battery">Super Heavy Battery</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/shbatt10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/shbatt10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3668,7 +3709,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3737,7 +3781,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3813,7 +3860,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3889,7 +3939,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -3971,7 +4024,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/submar10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -4031,7 +4087,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -4110,7 +4169,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -4189,7 +4251,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -4270,7 +4335,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">
@@ -4356,7 +4424,10 @@ class App extends Component {
           <option value="Locked">Locked</option>
         </select>
 
-        <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+        <div id="picdiv">
+          <img class="pict" src="https://i12.servimg.com/u/f12/19/44/96/17/carrie10.png"/>
+          <label id="isCapital"><img class="capital" src="https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png"/></label>
+        </div>
         <br/>
 
         <select class="equipselect" id="slot8">

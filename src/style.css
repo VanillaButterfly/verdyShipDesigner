@@ -142,10 +142,15 @@ body {
 .grey{
   background-color: #dadada;
 }
+#picdiv{
+  height: 200px
+}.capital{
+  margin-top: 20px;
+  margin-left: -30px;
+}
 .pict{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: left;
+  margin-left: 505px;
 }
 table{
   width:1519px;
