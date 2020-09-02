@@ -1,6 +1,6 @@
 h1, p, label, select {
   font-family: Lato;
-  color: #181818;
+  color: #303030;
 }
 body {
   margin: 0;
@@ -12,15 +12,40 @@ body {
   margin: auto;
   text-align: center;
   font-size: 36px;
-  color: #155a9b;
-}#title2{
+  color: #0078d7;
+}
+#title2{
   margin: auto;
   text-align: center;
   font-size: 26px;
-  color: #155a9b;
-}select{
+  color: #0078d7;
+}
+.hull{
+  margin: auto;
   width: 210px;
-  border: 1px solid #155a9b;
+}
+#hullselect{
+  width: 210px;
+  border: 2px solid #0078d7;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.equipselect{
+  width: 208px;
+  border: 1px solid #0078d7;
+  border-radius: 4px;
+  margin-right:1px;
+  margin-left:1px;
+}
+#desi{
+  width: 210px;
+  border: 1px solid #0078d7;
+  border-radius: 4px;
+}
+#doct{
+  width: 210px;
+  border: 1px solid #0078d7;
+  border-radius: 4px;
 }
 .center{
   margin: auto;
