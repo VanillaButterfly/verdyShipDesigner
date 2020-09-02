@@ -39,12 +39,10 @@ h1, p, label, select {
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   border: 1px solid #0078d7;
-  background-color: #dadada;
 }
 
 .container:hover input:checked ~ .checkmark {
   border: 1px solid #0078d7;
-  background-color: #dadada;
 }
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
