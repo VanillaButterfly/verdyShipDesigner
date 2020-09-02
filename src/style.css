@@ -22,34 +22,34 @@ body {
 }
 .hull{
   margin: auto;
-  width: 210px;
+  width: 166px;
 }
 #hullselect{
-  width: 210px;
+  width: 166px;
   border: 2px solid #0078d7;
   border-radius: 4px;
   font-weight: bold;
 }
 .equipselect{
-  width: 208px;
+  width: 215px;
   border: 1px solid #0078d7;
   border-radius: 4px;
   margin-right:1px;
   margin-left:1px;
 }
 #desi{
-  width: 210px;
-  border: 1px solid #0078d7;
+  width: 200px;
+  border: 1px solid #dadada;
   border-radius: 4px;
 }
 #doct{
-  width: 210px;
-  border: 1px solid #0078d7;
+  width: 200px;
+  border: 1px solid #dadada;
   border-radius: 4px;
 }
 .center{
   margin: auto;
-  width:1470px;
+  width:1519px;
 }
 .nojump{
   line-height:0;
@@ -66,19 +66,19 @@ body {
   margin-right: auto;
 }
 table{
-  width:1470px;
+  width:1519px;
 }
 td{
   width:57%;
 }
 #techno{
-  width:840px;
+  width:868px;
 }
 .techno_cell{
   width:50%;
 }
 #stats{
-  width:630px;
+  width:651px;
 }
 .stats_cell{
   width:33%;
