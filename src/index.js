@@ -6,6 +6,8 @@ class App extends Component {
 
 /*Variable Definition*/
 
+  onceever = 0;
+
   // Currently selected hull, by number id
   set = 0;
 
@@ -529,7 +531,7 @@ class App extends Component {
   }
 
   // ClassCheck returns a string of two characters that correspond to the class of the vessel
-  ClassChecker(){
+  ClassChecker(scop){
 
     var equ = {}
     var slotid = ""
@@ -544,10 +546,10 @@ class App extends Component {
       }
     }
 
-    if(this.set>=0 && this.set<4){
+    if(scop.set>=0 && scop.set<4){
       return("DD")
     }
-    if(this.set>=4 && this.set<11){
+    if(scop.set>=4 && scop.set<11){
       if(Object.keys(equ).indexOf("Heavy_Cruiser_Battery_1") != -1 || Object.keys(equ).indexOf("Heavy_Cruiser_Battery_2") != -1 || Object.keys(equ).indexOf("Heavy_Cruiser_Battery_3") != -1 || Object.keys(equ).indexOf("Heavy_Cruiser_Battery_4") != -1 || 
       Object.keys(equ).indexOf("Heavy_Battery_1") != -1 || Object.keys(equ).indexOf("Heavy_Battery_2") != -1 || Object.keys(equ).indexOf("Heavy_Battery_3") != -1 || Object.keys(equ).indexOf("Heavy_Battery_4") != -1){
         return("CA")
@@ -555,17 +557,17 @@ class App extends Component {
         return("CL")
       }
     }
-    if(this.set>=11 && this.set<17){
+    if(scop.set>=11 && scop.set<17){
       if(Object.keys(equ).indexOf("Battlecruiser_Armor_1") != -1 || Object.keys(equ).indexOf("Battlecruiser_Armor_2") != -1 || Object.keys(equ).indexOf("Battlecruiser_Armor_3") != -1){
         return("BC")
       } else {
         return("BB")
       }
     }
-    if(this.set>=17 && this.set<22){
+    if(scop.set>=17 && scop.set<22){
       return("SS")
     }
-    if(this.set>=22 && this.set<27){
+    if(scop.set>=22 && scop.set<27){
       return("CV")
     }
   }
@@ -655,38 +657,39 @@ class App extends Component {
 
 
   // Refresh recalculates the stats. It may be called at any point and should be called immediately after each change, ideally, but can also be called manually
-  refresh(){
+  refresh(funcCla, scop, funcKm, funcKn, funcNo, funcPe, funcTh, funcTw){
+
 
     // Pull out the base stats of the currently selected Hull
 
     var finalstat = {};
 
-    finalstat["naval_speed"] = this.naval_speed[this.set];
-    finalstat["naval_range"] = this.naval_range[this.set];
-    finalstat["max_organisation"] = this.max_organisation[this.set];
-    finalstat["max_strength"] = this.max_strength[this.set];
-    finalstat["reliability"] = this.reliability[this.set];
-    finalstat["supply_consumption"] = this.supply_consumption[this.set];
-    finalstat["manpower"] = this.manpower[this.set];
-    finalstat["carrier_size"] = this.carrier_size[this.set];
-    finalstat["lg_attack"] = this.lg_attack[this.set];
-    finalstat["lg_armor_piercing"] = this.lg_armor_piercing[this.set];
-    finalstat["hg_attack"] = this.hg_attack[this.set];
-    finalstat["hg_armor_piercing"] = this.hg_armor_piercing[this.set];
-    finalstat["torpedo_attack"] = this.torpedo_attack[this.set];
-    finalstat["sub_attack"] = this.sub_attack[this.set];
-    finalstat["armor_value"] = this.armor_value[this.set];
-    finalstat["anti_air_attack"] = this.anti_air_attack[this.set];
-    finalstat["fuel_consumption"] = this.fuel_consumption[this.set];
-    finalstat["surface_visibility"] = this.surface_visibility[this.set];
-    finalstat["surface_detection"] = this.surface_detection[this.set];
-    finalstat["sub_visibility"] = this.sub_visibility[this.set];
-    finalstat["sub_detection"] = this.sub_detection[this.set];
-    finalstat["mines_planting"] = this.mines_planting[this.set];
-    finalstat["mines_sweeping"] = this.mines_sweeping[this.set];
-    finalstat["build_cost_ic"] = this.build_cost_ic[this.set];
-    finalstat["steel"] = this.steel[this.set];
-    finalstat["chromium"] = this.chromium[this.set];
+    finalstat["naval_speed"] = scop.naval_speed[scop.set];
+    finalstat["naval_range"] = scop.naval_range[scop.set];
+    finalstat["max_organisation"] = scop.max_organisation[scop.set];
+    finalstat["max_strength"] = scop.max_strength[scop.set];
+    finalstat["reliability"] = scop.reliability[scop.set];
+    finalstat["supply_consumption"] = scop.supply_consumption[scop.set];
+    finalstat["manpower"] = scop.manpower[scop.set];
+    finalstat["carrier_size"] = scop.carrier_size[scop.set];
+    finalstat["lg_attack"] = scop.lg_attack[scop.set];
+    finalstat["lg_armor_piercing"] = scop.lg_armor_piercing[scop.set];
+    finalstat["hg_attack"] = scop.hg_attack[scop.set];
+    finalstat["hg_armor_piercing"] = scop.hg_armor_piercing[scop.set];
+    finalstat["torpedo_attack"] = scop.torpedo_attack[scop.set];
+    finalstat["sub_attack"] = scop.sub_attack[scop.set];
+    finalstat["armor_value"] = scop.armor_value[scop.set];
+    finalstat["anti_air_attack"] = scop.anti_air_attack[scop.set];
+    finalstat["fuel_consumption"] = scop.fuel_consumption[scop.set];
+    finalstat["surface_visibility"] = scop.surface_visibility[scop.set];
+    finalstat["surface_detection"] = scop.surface_detection[scop.set];
+    finalstat["sub_visibility"] = scop.sub_visibility[scop.set];
+    finalstat["sub_detection"] = scop.sub_detection[scop.set];
+    finalstat["mines_planting"] = scop.mines_planting[scop.set];
+    finalstat["mines_sweeping"] = scop.mines_sweeping[scop.set];
+    finalstat["build_cost_ic"] = scop.build_cost_ic[scop.set];
+    finalstat["steel"] = scop.steel[scop.set];
+    finalstat["chromium"] = scop.chromium[scop.set];
 
     // Gather the mounted equipment and count them in a dictionary of which a key is an equipment id and the associated value is the number of times it is mounted
 
@@ -703,23 +706,23 @@ class App extends Component {
       }
     }
 
-    var cla = this.ClassChecker();
+    var cla = funcCla(scop);
     var des = document.getElementById("desi").value
     var doc = document.getElementById("doct").value
 
     var tec = []
 
-    for(var k = 0; k<this.tech_table.length; k++){
-      if(document.getElementById(this.tech_table[k]).checked){
-        tec.push(document.getElementById(this.tech_table[k]).value)
+    for(var k = 0; k<scop.tech_table.length; k++){
+      if(document.getElementById(scop.tech_table[k]).checked){
+        tec.push(document.getElementById(scop.tech_table[k]).value)
       }
     }
 
     // Search the add table for equipment ids present in equ and modifies the stats accordingly. Also handles designers, doctrines and techs
 
     //iterates on all the keys of add ; that is, each existing stat
-    for(var statid of Object.keys(this.add)){
-      var line = this.add[statid]
+    for(var statid of Object.keys(scop.add)){
+      var line = scop.add[statid]
 
       //iterates on all the keys of equ ; that is, each mounted equipment piece
       for(var equid of Object.keys(equ)){
@@ -775,8 +778,8 @@ class App extends Component {
     // Search the avg table for equipment ids present in equ and modifies the stats accordingly
 
     //iterates on all the keys of avg ; that is, each existing stat
-    for(var statid of Object.keys(this.avg)){
-      var line = this.avg[statid]
+    for(var statid of Object.keys(scop.avg)){
+      var line = scop.avg[statid]
 
       //Create a temporary table to remember the values that will later be averaged
       var tempavgstat = [];
@@ -810,8 +813,8 @@ class App extends Component {
     // Search the per table for equipment ids present in equ and modifies the stats accordingly. also handles designers
 
     //iterates on all the keys of per ; that is, each existing stat
-    for(var statid of Object.keys(this.per)){
-      var line = this.per[statid]
+    for(var statid of Object.keys(scop.per)){
+      var line = scop.per[statid]
       var rememberedValue = finalstat[statid];
 
       //iterates on all the keys of equ ; that is, each mounted equipment piece
@@ -844,8 +847,8 @@ class App extends Component {
     // Search through per again to apply technology, doctrine effect if applicable
 
     //iterates on all the keys of per ; that is, each existing stat
-    for(var statid of Object.keys(this.per)){
-      var line = this.per[statid]
+    for(var statid of Object.keys(scop.per)){
+      var line = scop.per[statid]
       var rememberedValue = finalstat[statid];
 
       //checks to see if the current doctrine piece modifies the currenty examined stat
@@ -875,39 +878,61 @@ class App extends Component {
 
     // Writes all the values into the html for the user to see
 
-    document.getElementById('naval_speed').innerHTML = this.decimalCutToKn(finalstat["naval_speed"]);
-    document.getElementById('naval_range').innerHTML = this.decimalCutToKm(finalstat["naval_range"]);
-    document.getElementById('max_organisation').innerHTML = this.decimalCutToTwo(finalstat["max_organisation"]);
-    document.getElementById('max_strength').innerHTML = this.decimalCutToTwo(finalstat["max_strength"]);
-    document.getElementById('reliability').innerHTML = this.decimalCutToPercentage(finalstat["reliability"]);
-    document.getElementById('supply_consumption').innerHTML = this.decimalCutToThree(finalstat["supply_consumption"]);
-    document.getElementById('manpower').innerHTML = this.decimalCutToNone(finalstat["manpower"]);
-    document.getElementById('carrier_size').innerHTML = this.decimalCutToNone(finalstat["carrier_size"]);
-    document.getElementById('lg_attack').innerHTML = this.decimalCutToTwo(finalstat["lg_attack"]);
-    document.getElementById('lg_armor_piercing').innerHTML = this.decimalCutToTwo(finalstat["lg_armor_piercing"]);
-    document.getElementById('hg_attack').innerHTML = this.decimalCutToTwo(finalstat["hg_attack"]);
-    document.getElementById('hg_armor_piercing').innerHTML = this.decimalCutToTwo(finalstat["hg_armor_piercing"]);
-    document.getElementById('torpedo_attack').innerHTML = this.decimalCutToTwo(finalstat["torpedo_attack"]);
-    document.getElementById('sub_attack').innerHTML = this.decimalCutToTwo(finalstat["sub_attack"]);
-    document.getElementById('armor_value').innerHTML = this.decimalCutToTwo(finalstat["armor_value"]);
-    document.getElementById('anti_air_attack').innerHTML = this.decimalCutToTwo(finalstat["anti_air_attack"]);
-    document.getElementById('fuel_consumption').innerHTML = this.decimalCutToTwo(finalstat["fuel_consumption"]);
-    document.getElementById('surface_visibility').innerHTML = this.decimalCutToTwo(finalstat["surface_visibility"]);
-    document.getElementById('surface_detection').innerHTML = this.decimalCutToTwo(finalstat["surface_detection"]);
-    document.getElementById('sub_visibility').innerHTML = this.decimalCutToTwo(finalstat["sub_visibility"]);
-    document.getElementById('sub_detection').innerHTML = this.decimalCutToTwo(finalstat["sub_detection"]);
-    document.getElementById('mines_planting').innerHTML = this.decimalCutToThree(finalstat["mines_planting"]);
-    document.getElementById('mines_sweeping').innerHTML = this.decimalCutToThree(finalstat["mines_sweeping"]);
-    document.getElementById('build_cost_ic').innerHTML = this.decimalCutToNone(finalstat["build_cost_ic"]);
-    document.getElementById('steel').innerHTML = this.decimalCutToNone(finalstat["steel"]);
-    document.getElementById('chromium').innerHTML = this.decimalCutToNone(finalstat["chromium"]);
+    document.getElementById('naval_speed').innerHTML = funcKn(finalstat["naval_speed"]);
+    document.getElementById('naval_range').innerHTML = funcKm(finalstat["naval_range"]);
+    document.getElementById('max_organisation').innerHTML = funcTw(finalstat["max_organisation"]);
+    document.getElementById('max_strength').innerHTML = funcTw(finalstat["max_strength"]);
+    document.getElementById('reliability').innerHTML = funcPe(finalstat["reliability"]);
+    document.getElementById('supply_consumption').innerHTML = funcTh(finalstat["supply_consumption"]);
+    document.getElementById('manpower').innerHTML = funcNo(finalstat["manpower"]);
+    document.getElementById('carrier_size').innerHTML = funcNo(finalstat["carrier_size"]);
+    document.getElementById('lg_attack').innerHTML = funcTw(finalstat["lg_attack"]);
+    document.getElementById('lg_armor_piercing').innerHTML = funcTw(finalstat["lg_armor_piercing"]);
+    document.getElementById('hg_attack').innerHTML = funcTw(finalstat["hg_attack"]);
+    document.getElementById('hg_armor_piercing').innerHTML = funcTw(finalstat["hg_armor_piercing"]);
+    document.getElementById('torpedo_attack').innerHTML = funcTw(finalstat["torpedo_attack"]);
+    document.getElementById('sub_attack').innerHTML = funcTw(finalstat["sub_attack"]);
+    document.getElementById('armor_value').innerHTML = funcTw(finalstat["armor_value"]);
+    document.getElementById('anti_air_attack').innerHTML = funcTw(finalstat["anti_air_attack"]);
+    document.getElementById('fuel_consumption').innerHTML = funcTw(finalstat["fuel_consumption"]);
+    document.getElementById('surface_visibility').innerHTML = funcTw(finalstat["surface_visibility"]);
+    document.getElementById('surface_detection').innerHTML = funcTw(finalstat["surface_detection"]);
+    document.getElementById('sub_visibility').innerHTML = funcTw(finalstat["sub_visibility"]);
+    document.getElementById('sub_detection').innerHTML = funcTw(finalstat["sub_detection"]);
+    document.getElementById('mines_planting').innerHTML = funcTh(finalstat["mines_planting"]);
+    document.getElementById('mines_sweeping').innerHTML = funcTh(finalstat["mines_sweeping"]);
+    document.getElementById('build_cost_ic').innerHTML = funcNo(finalstat["build_cost_ic"]);
+    document.getElementById('steel').innerHTML = funcNo(finalstat["steel"]);
+    document.getElementById('chromium').innerHTML = funcNo(finalstat["chromium"]);
 
-    if(this.ClassChecker() == "CA" || this.ClassChecker() == "BB" || this.ClassChecker() == "BC" || this.ClassChecker() == "CV"){
+    if(cla == "CA" || cla == "BB" || cla == "BC" || cla == "CV"){
       document.getElementById('isCapital').innerHTML = "<img class=\"capital\" src=\"https://i12.servimg.com/u/f12/19/44/96/17/capita10.png\"/>";
     }
     else{
       document.getElementById('isCapital').innerHTML = "<img class=\"capital\" src=\"https://i12.servimg.com/u/f12/19/44/96/17/notcap10.png\"/>";
     }
+  }
+
+  intervalsetter(){
+    var scop = this
+    setInterval(this.refresh, 1000, this.ClassChecker, scop, this.decimalCutToKm, this.decimalCutToKn, this.decimalCutToNone, this.decimalCutToPercentage, this.decimalCutToThree, this.decimalCutToTwo)
+  }
+
+  reactElementCopy(rea){
+    var newrea = {}
+    for(var elt of Object.keys(rea)){
+      if(elt == "props" && Object.keys(rea["props"]).length != 0){
+        newrea["props"] = {}
+        newrea["props"]["children"] = []
+        for(var i=0; i<rea["props"]["children"].length; i++){
+          var chi = rea["props"]["children"][i]
+          newrea["props"]["children"].push(this.reactElementCopy(chi))
+        }
+      } else{
+        newrea[elt] = rea[elt]
+      }
+    }
+    return (newrea)
   }
 
   // Default render function that returns the html of the page. This function should NEVER BE CALLED ; to reload the page according to its return value, use: render(<App />, document.getElementById('root'))
@@ -918,8 +943,10 @@ class App extends Component {
       </div>
     ;
 
+    //console.log(this)
+
     var a =
-      <div onClick={() => this.refresh()}>
+      <div>
         <div class="title">
           <br/>
           <p id="title1">Naval calculator</p>
@@ -964,8 +991,12 @@ class App extends Component {
       </div>
     ;
 
+    var acopy = this.reactElementCopy(a)
+    console.log(a)
+    console.log(acopy)
+
     var b =
-      <div class="center" onClick={() => this.refresh()}>
+      <div class="center">
         <br/>
         <br/>
         <table>
@@ -1256,7 +1287,7 @@ class App extends Component {
     //Early DD
     if(this.set == 0){
       var s =
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -1368,7 +1399,7 @@ class App extends Component {
     //1936 DD
     if(this.set == 1){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -1490,7 +1521,7 @@ class App extends Component {
     //1940 DD
     if (this.set == 2){
       var s =
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -1625,7 +1656,7 @@ class App extends Component {
     //1944 DD
     if (this.set == 3){
       var s =
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -1779,7 +1810,7 @@ class App extends Component {
     //Coastal Defense Ship
     if (this.set == 4){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -1912,7 +1943,7 @@ class App extends Component {
     //Early Cruiser
     if (this.set == 5){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2084,7 +2115,7 @@ class App extends Component {
     //1936 Cruiser
     if (this.set == 6){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2273,7 +2304,7 @@ class App extends Component {
     //1940 Cruiser
     if (this.set == 7){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2484,7 +2515,7 @@ class App extends Component {
     //1944 Cruiser
     if (this.set == 8){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2695,7 +2726,7 @@ class App extends Component {
     //Torpedo Cruiser
     if (this.set == 9){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2832,7 +2863,7 @@ class App extends Component {
     //Panzerschiff
     if (this.set == 10){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -2950,7 +2981,7 @@ class App extends Component {
     //Pre-Dreadnought
     if (this.set == 11){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3054,7 +3085,7 @@ class App extends Component {
     //Early BB
     if (this.set == 12){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3171,7 +3202,7 @@ class App extends Component {
     //1936 BB
     if (this.set == 13){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3301,7 +3332,7 @@ class App extends Component {
     //1940 BB
     if (this.set == 14){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3441,7 +3472,7 @@ class App extends Component {
     //1944 BB
     if (this.set == 15){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3584,7 +3615,7 @@ class App extends Component {
     //SH BB
     if (this.set == 16){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -3709,7 +3740,7 @@ class App extends Component {
     //Early SS
     if (this.set == 17){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3777,7 +3808,7 @@ class App extends Component {
     //1936 SS
     if (this.set == 18){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3849,7 +3880,7 @@ class App extends Component {
     //1940 SS
     if (this.set == 19){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -3928,7 +3959,7 @@ class App extends Component {
     //1944 SS
     if (this.set == 20){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -4007,7 +4038,7 @@ class App extends Component {
     //Cruiser Submarine
     if (this.set == 21){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
@@ -4092,7 +4123,7 @@ class App extends Component {
     // Converted Cruiser
     if (this.set == 22){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Locked">Locked</option>
         </select>
@@ -4169,7 +4200,7 @@ class App extends Component {
     //Converted Battleship
     if (this.set == 23){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4251,7 +4282,7 @@ class App extends Component {
     //1936 CV
     if (this.set == 24){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
@@ -4329,7 +4360,7 @@ class App extends Component {
     //1940 CV
     if (this.set == 25){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -4413,7 +4444,7 @@ class App extends Component {
     //1944 CV
     if (this.set == 26){
       var s = 
-      <div class="center nojump" onClick={() => this.refresh()}>
+      <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
@@ -4513,6 +4544,11 @@ class App extends Component {
       }
     }
     //console.log(newrea);
+
+    if(this.onceever == 0){
+      this.intervalsetter()
+      this.onceever = 1
+    }
 
     return (newrea);
   }
