@@ -920,14 +920,29 @@ class App extends Component {
 
   reactElementCopy(rea){
     var newrea = {}
+
     for(var elt of Object.keys(rea)){
+
       if(elt == "props" && Object.keys(rea["props"]).length != 0){
         newrea["props"] = {}
-        newrea["props"]["children"] = []
-        for(var i=0; i<rea["props"]["children"].length; i++){
-          var chi = rea["props"]["children"][i]
-          newrea["props"]["children"].push(this.reactElementCopy(chi))
+
+        if(rea["props"]["children"].length == undefined){
+          newrea["props"]["children"] = rea["props"]["children"]
+        } else{
+          newrea["props"]["children"] = []
+
+          for(var i=0; i<rea["props"]["children"].length; i++){
+            var chi = rea["props"]["children"][i]
+            newrea["props"]["children"].push(this.reactElementCopy(chi))
+          }
         }
+
+        for(var propelt of Object.keys(rea["props"])){
+          if(propelt!="children"){
+            newrea["props"][propelt] = rea["props"][propelt]
+          }
+        }
+
       } else{
         newrea[elt] = rea[elt]
       }
