@@ -7,6 +7,8 @@ class App extends Component {
 /*Variable Definition*/
 
   onceever = 0;
+  queryString = window.location.search;
+  urlParams = new URLSearchParams(this.queryString);
 
   // Currently selected hull, by number id
   set = 0;
@@ -923,10 +925,12 @@ class App extends Component {
 
     for(var elt of Object.keys(rea)){
 
-      if(elt == "props" && Object.keys(rea["props"]).length != 0){
+      if(elt == "props" && Object.keys(rea["props"]).length != 0 && Object.keys(rea["props"]).indexOf("children")!=-1){
         newrea["props"] = {}
 
         if(rea["props"]["children"].length == undefined){
+          newrea["props"]["children"] = this.reactElementCopy(rea["props"]["children"])
+        } else if(typeof rea["props"]["children"] == "string"){
           newrea["props"]["children"] = rea["props"]["children"]
         } else{
           newrea["props"]["children"] = []
@@ -950,8 +954,27 @@ class App extends Component {
     return (newrea)
   }
 
+  copytoclip(){
+    var ret = window.location.origin + "/?"
+    ret = ret + "hull=" + document.getElementById("hullselect").value
+    for(var i=1 ; i<15 ; i++){
+      if(document.getElementById("slot" + i).value!="Empty" && document.getElementById("slot" + i).value!="Locked"){
+        ret = ret + "&s" + i + "=" + document.getElementById("slot" + i).selectedIndex
+      }
+    }
+
+    document.querySelector("#inputcopy").value = ret
+    var copyText = document.querySelector("#inputcopy");
+    copyText.select();
+    document.execCommand("copy");
+
+    console.log(ret)
+  }
+
   // Default render function that returns the html of the page. This function should NEVER BE CALLED ; to reload the page according to its return value, use: render(<App />, document.getElementById('root'))
   render() {
+
+    console.log(window.location.origin + "/")
 
     var emptydiv = 
       <div>
@@ -1007,8 +1030,6 @@ class App extends Component {
     ;
 
     var acopy = this.reactElementCopy(a)
-    console.log(a)
-    console.log(acopy)
 
     var b =
       <div class="center">
@@ -1285,8 +1306,16 @@ class App extends Component {
             </tr>
           </tbody>
         </table>
+
+        <button type="button" onClick={() => this.copytoclip()}>Copy template URL to cpliboard</button>
+        <input id="inputcopy" type="text"/>
       </div>
     ;
+
+    if(this.queryString.length != 0 && this.onceever == 0){
+      this.set = this.urlParams.get("hull")
+      acopy["props"]["children"][3]["props"]["children"]["props"]["children"][this.set]["props"]["selected"] = true;
+    }
 
     /* 
     HULL LIST WITH THEIR SLOTS AND ALL ; KEEP SEPARATE FROM REST OF THE CODE OR ITS GONNA BECOME UNREADABLY UGLY
@@ -4545,15 +4574,32 @@ class App extends Component {
       ;
     }
 
+    var scopy = this.reactElementCopy(s)
+
     /* 
     END OF HULL LIST WITH THEIR SLOTS AND ALL ; KEEP SEPARATE FROM REST OF THE CODE OR ITS GONNA BECOME UNREADABLY UGLY
     */
+
+    console.log(acopy)
+
+    if(this.queryString.length != 0 && this.onceever == 0){
+
+      for(var i = 1; i<15; i++){
+        if(this.urlParams.get("s"+i)!=null){
+          if(i<8){
+            scopy["props"]["children"][i-1]["props"]["children"][this.urlParams.get("s"+i)]["props"]["selected"]=true
+          } else {
+            scopy["props"]["children"][i+1]["props"]["children"][this.urlParams.get("s"+i)]["props"]["selected"]=true
+          }
+        }
+      }
+    }
 
     //console.log(emptydiv)
     var newrea = {}
     for(var elt of Object.keys(emptydiv)){
       if(elt == "props"){
-        newrea["props"] = {children : [a,s,b]}
+        newrea["props"] = {children : [acopy,scopy,b]}
       } else{
         newrea[elt] = emptydiv[elt]
       }
