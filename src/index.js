@@ -937,7 +937,12 @@ class App extends Component {
 
           for(var i=0; i<rea["props"]["children"].length; i++){
             var chi = rea["props"]["children"][i]
-            newrea["props"]["children"].push(this.reactElementCopy(chi))
+
+            if(typeof chi == "string"){
+              newrea["props"]["children"].push(chi)
+            } else {
+              newrea["props"]["children"].push(this.reactElementCopy(chi))
+            }
           }
         }
 
@@ -962,6 +967,8 @@ class App extends Component {
         ret = ret + "&s" + i + "=" + document.getElementById("slot" + i).selectedIndex
       }
     }
+     ret = ret + "&de=" + document.getElementById("desi").selectedIndex
+     ret = ret + "&do=" + document.getElementById("doct").selectedIndex
 
     document.querySelector("#inputcopy").value = ret
     var copyText = document.querySelector("#inputcopy");
@@ -1115,7 +1122,7 @@ class App extends Component {
                           <br/>
                           <label class="container">
                             Small caliber armor piercing shell
-                            <input type="checkbox" id="improved_light_shell" value="Light_shell_2"></input>
+                            <input type="checkbox" id="improved_light_shell" value="Light_shell_2" ></input>
                             <span class="checkmark"></span>
                           </label>
                           <br/>
@@ -1311,6 +1318,8 @@ class App extends Component {
         <input id="inputcopy" type="text"/>
       </div>
     ;
+
+    var bcopy = this.reactElementCopy(b)
 
     if(this.queryString.length != 0 && this.onceever == 0){
       this.set = this.urlParams.get("hull")
@@ -4592,14 +4601,22 @@ class App extends Component {
             scopy["props"]["children"][i+1]["props"]["children"][this.urlParams.get("s"+i)]["props"]["selected"]=true
           }
         }
+        if(this.urlParams.get("de")!=null){
+          bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][0]["props"]["children"][2]["props"]["children"][this.urlParams.get("de")]["props"]["selected"]=true
+        }
+        if(this.urlParams.get("do")!=null){
+          bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][1]["props"]["children"][2]["props"]["children"][this.urlParams.get("do")]["props"]["selected"]=true
+        }
       }
     }
 
-    //console.log(emptydiv)
+    console.log("b is")
+    console.log(bcopy)
+
     var newrea = {}
     for(var elt of Object.keys(emptydiv)){
       if(elt == "props"){
-        newrea["props"] = {children : [acopy,scopy,b]}
+        newrea["props"] = {children : [acopy,scopy,bcopy]}
       } else{
         newrea[elt] = emptydiv[elt]
       }
