@@ -1314,7 +1314,10 @@ class App extends Component {
           </tbody>
         </table>
 
-        <button type="button" onClick={() => this.copytoclip()}>Copy template URL to cpliboard</button>
+        <br/>
+        <div class="button" >
+          <button class="urlbutton" type="button" onClick={() => this.copytoclip()}>Copy URL to clipboard</button>
+        </div>
         <input id="inputcopy" type="text"/>
       </div>
     ;

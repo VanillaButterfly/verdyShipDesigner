@@ -173,3 +173,16 @@ td{
 .tech_names{
   line-height:1.4;
 }
+.button{
+  text-align: center;
+}
+.urlbutton{
+  border-radius:15px;
+  background:#dadada;
+  height: 25px;
+  width:150px;
+}
+#inputcopy{
+  width:0px;
+  margin-left: -3000px;
+}
