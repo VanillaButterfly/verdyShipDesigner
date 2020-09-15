@@ -1453,7 +1453,7 @@ class App extends Component {
     }
 
     //1936 DD
-    if(this.set == 1){
+    else if(this.set == 1){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -1575,7 +1575,7 @@ class App extends Component {
     }
 
     //1940 DD
-    if (this.set == 2){
+    else if (this.set == 2){
       var s =
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -1710,7 +1710,7 @@ class App extends Component {
     }
 
     //1944 DD
-    if (this.set == 3){
+    else if (this.set == 3){
       var s =
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -1864,7 +1864,7 @@ class App extends Component {
     }
 
     //Coastal Defense Ship
-    if (this.set == 4){
+    else if (this.set == 4){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -1997,7 +1997,7 @@ class App extends Component {
     }
 
     //Early Cruiser
-    if (this.set == 5){
+    else if (this.set == 5){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -2169,7 +2169,7 @@ class App extends Component {
     }
 
     //1936 Cruiser
-    if (this.set == 6){
+    else if (this.set == 6){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -2358,7 +2358,7 @@ class App extends Component {
     }
 
     //1940 Cruiser
-    if (this.set == 7){
+    else if (this.set == 7){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -2569,7 +2569,7 @@ class App extends Component {
     }
 
     //1944 Cruiser
-    if (this.set == 8){
+    else if (this.set == 8){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -2780,7 +2780,7 @@ class App extends Component {
     }
 
     //Torpedo Cruiser
-    if (this.set == 9){
+    else if (this.set == 9){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -2917,7 +2917,7 @@ class App extends Component {
     }
 
     //Panzerschiff
-    if (this.set == 10){
+    else if (this.set == 10){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3035,7 +3035,7 @@ class App extends Component {
     }
 
     //Pre-Dreadnought
-    if (this.set == 11){
+    else if (this.set == 11){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3139,7 +3139,7 @@ class App extends Component {
     }
 
     //Early BB
-    if (this.set == 12){
+    else if (this.set == 12){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3256,7 +3256,7 @@ class App extends Component {
     }
 
     //1936 BB
-    if (this.set == 13){
+    else if (this.set == 13){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3386,7 +3386,7 @@ class App extends Component {
     }
 
     //1940 BB
-    if (this.set == 14){
+    else if (this.set == 14){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3526,7 +3526,7 @@ class App extends Component {
     }
 
     //1944 BB
-    if (this.set == 15){
+    else if (this.set == 15){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3669,7 +3669,7 @@ class App extends Component {
     }
 
     //SH BB
-    if (this.set == 16){
+    else if (this.set == 16){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3794,7 +3794,7 @@ class App extends Component {
     }
 
     //Early SS
-    if (this.set == 17){
+    else if (this.set == 17){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3862,7 +3862,7 @@ class App extends Component {
     }
 
     //1936 SS
-    if (this.set == 18){
+    else if (this.set == 18){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -3934,7 +3934,7 @@ class App extends Component {
     }
 
     //1940 SS
-    if (this.set == 19){
+    else if (this.set == 19){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4013,7 +4013,7 @@ class App extends Component {
     }
 
     //1944 SS
-    if (this.set == 20){
+    else if (this.set == 20){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4092,7 +4092,7 @@ class App extends Component {
     }
 
     //Cruiser Submarine
-    if (this.set == 21){
+    else if (this.set == 21){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4177,7 +4177,7 @@ class App extends Component {
     }
 
     // Converted Cruiser
-    if (this.set == 22){
+    else if (this.set == 22){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4254,7 +4254,7 @@ class App extends Component {
     }
 
     //Converted Battleship
-    if (this.set == 23){
+    else if (this.set == 23){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4336,7 +4336,7 @@ class App extends Component {
     }
 
     //1936 CV
-    if (this.set == 24){
+    else if (this.set == 24){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4414,7 +4414,7 @@ class App extends Component {
     }
 
     //1940 CV
-    if (this.set == 25){
+    else if (this.set == 25){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
@@ -4498,7 +4498,7 @@ class App extends Component {
     }
 
     //1944 CV
-    if (this.set == 26){
+    else if (this.set == 26){
       var s = 
       <div class="center nojump">
         <select class="equipselect" id="slot1">
