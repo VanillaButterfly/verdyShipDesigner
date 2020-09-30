@@ -95,7 +95,7 @@ class App extends Component {
   supply_consumption = [
     0.01, 0.01, 0.01, 0.01,
     0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, // Woraround for CA and CL having different supply values
-    0.14, 0.14, 0.14, 0.14, 0.14, 0.14,       // Side effect of previous line
+    0.14, 0.14, 0.14, 0.14, 0.14, 0.20,       // Side effect of previous line
     0.01, 0.01, 0.01, 0.01, 0.01,
     0.3, 0.3, 0.3, 0.3, 0.3
   ];
@@ -201,7 +201,7 @@ class App extends Component {
     20, 20, 20, 20, 20, 20, 20,
     20, 20, 20, 20, 20, 20,
     20, 20, 20, 20, 20,
-    20, 20, 20, 20, 20
+    26, 26, 26, 26, 26
   ];
   
   sub_visibility = [
@@ -354,8 +354,7 @@ class App extends Component {
     max_strength : {Light_Cruiser_Battery_1:20, Light_Cruiser_Battery_2:20, Light_Cruiser_Battery_3:20, Light_Cruiser_Battery_4:20},
     reliability : {},
     supply_consumption : {Heavy_Cruiser_Battery_1:0.06, Heavy_Cruiser_Battery_2:0.06, Heavy_Cruiser_Battery_3:0.06, Heavy_Cruiser_Battery_4:0.06, // Woraround for CA and CL having different supply values
-      Heavy_Battery_1:0.06, Heavy_Battery_2:0.06, Heavy_Battery_3:0.06, Heavy_Battery_4:0.06,                                                     // Woraround for CA and CL having different supply values
-      Battlecruiser_Armor_1:-0.08, Battlecruiser_Armor_2:-0.08, Battlecruiser_Armor_3:-0.08},                                                     // Woraround for BB and BC having different supply values
+      Heavy_Battery_1:0.06, Heavy_Battery_2:0.06, Heavy_Battery_3:0.06, Heavy_Battery_4:0.06},                                                     // Woraround for CA and CL having different supply values
     manpower : {},
     carrier_size : {},
     lg_attack : {},
@@ -425,7 +424,7 @@ class App extends Component {
       Heavy_Engine_1:-0.2, Heavy_Engine_2:-0.2, Heavy_Engine_3:-0.2, Heavy_Engine_4:-0.2,
       Submarine_Engine_1:-0.2, Submarine_Engine_2:-0.2, Submarine_Engine_3:-0.2, Submarine_Engine_4:-0.2,
       Carrier_Engine_1:-0.2, Carrier_Engine_2:-0.2, Carrier_Engine_3:-0.2, Carrier_Engine_4:-0.2},
-    supply_consumption : {},
+    supply_consumption : {Battlecruiser_Armor_1:-0.4, Battlecruiser_Armor_2:-0.4, Battlecruiser_Armor_3:-0.4}, // Woraround for BB and BC having different supply values
     manpower : {},
     carrier_size : {Pacific_fleet_Designer:{CV:0.25},
       Raiding_fleet_Designer:{CV:-0.1},
@@ -953,7 +952,15 @@ class App extends Component {
         }
 
       } else{
-        newrea[elt] = rea[elt]
+        if(elt == "props"){
+          var newprops = {}
+          for(var propelt of Object.keys(rea[elt])){
+            newprops[propelt] = rea[elt][propelt]
+          }
+          newrea[elt] = newprops
+        } else{
+          newrea[elt] = rea[elt]
+        }
       }
     }
     return (newrea)
@@ -969,6 +976,10 @@ class App extends Component {
     }
      ret = ret + "&de=" + document.getElementById("desi").selectedIndex
      ret = ret + "&do=" + document.getElementById("doct").selectedIndex
+
+     if(document.getElementById("bracket_shooting").checked == true){
+       ret = ret + "&bs=1"
+     }
 
     document.querySelector("#inputcopy").value = ret
     var copyText = document.querySelector("#inputcopy");
@@ -4610,6 +4621,10 @@ class App extends Component {
       }
       if(this.urlParams.get("do")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][1]["props"]["children"][2]["props"]["children"][this.urlParams.get("do")]["props"]["selected"]=true
+      }
+
+      if(this.urlParams.get("bs")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["checked"]=true
       }
     }
 
