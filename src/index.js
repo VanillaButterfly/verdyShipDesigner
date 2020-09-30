@@ -4624,7 +4624,7 @@ class App extends Component {
       }
 
       if(this.urlParams.get("bs")!=null){
-        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["checked"]=true
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
     }
 
