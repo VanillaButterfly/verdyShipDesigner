@@ -986,6 +986,44 @@ class App extends Component {
      if(document.getElementById("bracket_shooting").checked == true){
        ret = ret + "&bs=1"
      }
+     if(document.getElementById("ladder_shooting").checked == true){
+       ret = ret + "&ls=1"
+     }
+     if(document.getElementById("shell_dyes").checked == true){
+       ret = ret + "&sd=1"
+     }
+
+     if(document.getElementById("magnetic_detonator").checked == true){
+       ret = ret + "&md=1"
+     }
+     if(document.getElementById("homing_torpedo").checked == true){
+       ret = ret + "&ht=1"
+     }
+
+     if(document.getElementById("basic_light_shell").checked == true){
+       ret = ret + "&bls=1"
+     }
+     if(document.getElementById("improved_light_shell").checked == true){
+       ret = ret + "&ils=1"
+     }
+
+     if(document.getElementById("basic_medium_shell").checked == true){
+       ret = ret + "&bms=1"
+     }
+     if(document.getElementById("improved_medium_shell").checked == true){
+       ret = ret + "&ims=1"
+     }
+
+     if(document.getElementById("basic_heavy_shell").checked == true){
+       ret = ret + "&bhs=1"
+     }
+     if(document.getElementById("improved_heavy_shell").checked == true){
+       ret = ret + "&ihs=1"
+     }
+
+     if(document.getElementById("improved_submarine_mine_laying").checked == true){
+       ret = ret + "&isml=1"
+     }
 
     document.querySelector("#inputcopy").value = ret
     var copyText = document.querySelector("#inputcopy");
@@ -4629,13 +4667,55 @@ class App extends Component {
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][1]["props"]["children"][2]["props"]["children"][this.urlParams.get("do")]["props"]["selected"]=true
       }
 
+      //fcm & torp tech
+
       if(this.urlParams.get("bs")!=null){
         bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
       }
+      if(this.urlParams.get("ls")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+      if(this.urlParams.get("sd")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][2]["props"]["children"][6]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+
+      if(this.urlParams.get("md")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][3]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+      if(this.urlParams.get("ht")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"][3]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+
+      //shell & mine techs
+
+      if(this.urlParams.get("bls")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][0]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+      if(this.urlParams.get("ils")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][0]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+
+      if(this.urlParams.get("bms")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][1]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+      if(this.urlParams.get("ims")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][1]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+
+      if(this.urlParams.get("bhs")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][2]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+      if(this.urlParams.get("ihs")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][2]["props"]["children"][4]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
+
+      if(this.urlParams.get("isml")!=null){
+        bcopy["props"]["children"][2]["props"]["children"]["props"]["children"]["props"]["children"][0]["props"]["children"]["props"]["children"]["props"]["children"]["props"]["children"][1]["props"]["children"][3]["props"]["children"][2]["props"]["children"][1]["props"]["defaultChecked"]=true
+      }
     }
 
-    console.log("s is")
-    console.log(scopy)
+    console.log("b is")
+    console.log(bcopy)
 
     var newrea = {}
     for(var elt of Object.keys(emptydiv)){
