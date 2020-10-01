@@ -4614,7 +4614,7 @@ class App extends Component {
     if(this.queryString.length != 0 && this.onceever == 0){
 
       for(var i = 1; i<15; i++){
-        if(this.urlParams.get("s"+i)!=null){
+        if(this.urlParams.get("s"+i)!=null && this.urlParams.get("s"+i)!=0){
           if(i<8){
             scopy["props"]["children"][i-1]["props"]["children"][this.urlParams.get("s"+i)]["props"]["selected"]=true
           } else {
@@ -4634,8 +4634,8 @@ class App extends Component {
       }
     }
 
-    console.log("b is")
-    console.log(bcopy)
+    console.log("s is")
+    console.log(scopy)
 
     var newrea = {}
     for(var elt of Object.keys(emptydiv)){
