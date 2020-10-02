@@ -480,7 +480,7 @@ class App extends Component {
       Trade_Interdiction_Doctrine:{BB:0.25, BC:0.3, CA:0.3, CL:0.3, SS:0.5},
       Base_Strike_Doctrine:{CL:0.25, SS:0.25}},
     sub_visibility : {Raiding_fleet_Designer:{SS:-0.1},
-      Submarine_Engine_2:-0.05, Submarine_Engine_3:-0.1, Submarine_Engine_4:-0.015,
+      Submarine_Engine_2:-0.05, Submarine_Engine_3:-0.1, Submarine_Engine_4:-0.15,
       Snorkel_1:-0.1, Snorkel_2:-0.2,},
     sub_detection : {Fleet_in_Being_Doctrine:{CV:0.5, CL:0.35, DD:0.3},
       Trade_Interdiction_Doctrine:{DD:0.05},
