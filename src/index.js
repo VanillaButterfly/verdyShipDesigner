@@ -1405,16 +1405,16 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Minelaying_Rails">Minelaying Rails</option>
           <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -1422,16 +1422,16 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Minelaying_Rails">Minelaying Rails</option>
           <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Locked">Locked</option>
@@ -1517,21 +1517,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -1539,21 +1539,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Locked">Locked</option>
@@ -1639,15 +1639,15 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Light_Battery_1">Light Battery 1</option>
-          <option value="Light_Battery_2">Light Battery 2</option>
-          <option value="Light_Battery_3">Light Battery 3</option>
-          <option value="Light_Battery_4">Light Battery 4</option>
-          <option value="DP_Light_Battery">DP Light Battery</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
+          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
+          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
+          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
+          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -1655,21 +1655,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -1677,21 +1677,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Locked">Locked</option>
@@ -1774,15 +1774,15 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Light_Battery_1">Light Battery 1</option>
-          <option value="Light_Battery_2">Light Battery 2</option>
-          <option value="Light_Battery_3">Light Battery 3</option>
-          <option value="Light_Battery_4">Light Battery 4</option>
-          <option value="DP_Light_Battery">DP Light Battery</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
+          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
+          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
+          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
+          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -1790,21 +1790,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -1812,21 +1812,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -1834,21 +1834,21 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
           <option value="Depth_Charge_1">Depth Charge 1</option>
           <option value="Depth_Charge_2">Depth Charge 2</option>
           <option value="Depth_Charge_3">Depth Charge 3</option>
           <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option class="grey" value="Minesweeping_Gears">Minesweeping Gears</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Locked">Locked</option>
@@ -1959,20 +1959,20 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Locked">Locked</option>
@@ -2061,11 +2061,6 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Light_Battery_1">Light Battery 1</option>
           <option value="Light_Battery_2">Light Battery 2</option>
           <option value="Light_Battery_3">Light Battery 3</option>
@@ -2081,9 +2076,14 @@ class App extends Component {
           <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
           <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -2091,11 +2091,6 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Light_Battery_1">Light Battery 1</option>
           <option value="Light_Battery_2">Light Battery 2</option>
           <option value="Light_Battery_3">Light Battery 3</option>
@@ -2111,9 +2106,14 @@ class App extends Component {
           <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
           <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -2121,26 +2121,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Locked">Locked</option>
@@ -2253,11 +2253,6 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Light_Battery_1">Light Battery 1</option>
           <option value="Light_Battery_2">Light Battery 2</option>
           <option value="Light_Battery_3">Light Battery 3</option>
@@ -2273,9 +2268,14 @@ class App extends Component {
           <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
           <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
@@ -2283,11 +2283,6 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
-          <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
-          <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
-          <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
           <option value="Light_Battery_1">Light Battery 1</option>
           <option value="Light_Battery_2">Light Battery 2</option>
           <option value="Light_Battery_3">Light Battery 3</option>
@@ -2303,9 +2298,14 @@ class App extends Component {
           <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
           <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
+          <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
+          <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
+          <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
+          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Empty">Empty</option>
@@ -2313,26 +2313,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Locked">Locked</option>
@@ -2442,25 +2442,25 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -2471,25 +2471,25 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -2500,26 +2500,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -2527,26 +2527,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Locked">Locked</option>
@@ -2653,25 +2653,25 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -2682,25 +2682,25 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -2711,26 +2711,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -2738,26 +2738,26 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
-          <option class="grey" value="Light_Battery_1">Light Battery 1</option>
-          <option class="grey" value="Light_Battery_2">Light Battery 2</option>
-          <option class="grey" value="Light_Battery_3">Light Battery 3</option>
-          <option class="grey" value="Light_Battery_4">Light Battery 4</option>
-          <option class="grey" value="DP_Light_Battery">DP Light Battery</option>
-          <option value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
-          <option value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
-          <option value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
-          <option value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
-          <option class="grey" value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Depth_Charge_1">Depth Charge 1</option>
-          <option class="grey" value="Depth_Charge_2">Depth Charge 2</option>
-          <option class="grey" value="Depth_Charge_3">Depth Charge 3</option>
-          <option class="grey" value="Depth_Charge_4">Depth Charge 4</option>
+          <option value="Light_Battery_1">Light Battery 1</option>
+          <option value="Light_Battery_2">Light Battery 2</option>
+          <option value="Light_Battery_3">Light Battery 3</option>
+          <option value="Light_Battery_4">Light Battery 4</option>
+          <option value="DP_Light_Battery">DP Light Battery</option>
+          <option class="grey" value="Light_Cruiser_Battery_1">Light Cruiser Battery 1</option>
+          <option class="grey" value="Light_Cruiser_Battery_2">Light Cruiser Battery 2</option>
+          <option class="grey" value="Light_Cruiser_Battery_3">Light Cruiser Battery 3</option>
+          <option class="grey" value="Light_Cruiser_Battery_4">Light Cruiser Battery 4</option>
+          <option value="Heavy_Cruiser_Battery_1">Heavy Cruiser Battery 1</option>
+          <option value="Heavy_Cruiser_Battery_2">Heavy Cruiser Battery 2</option>
+          <option value="Heavy_Cruiser_Battery_3">Heavy Cruiser Battery 3</option>
+          <option value="Heavy_Cruiser_Battery_4">Heavy Cruiser Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Depth_Charge_1">Depth Charge 1</option>
+          <option value="Depth_Charge_2">Depth Charge 2</option>
+          <option value="Depth_Charge_3">Depth Charge 3</option>
+          <option value="Depth_Charge_4">Depth Charge 4</option>
+          <option class="grey" value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Locked">Locked</option>
@@ -2877,13 +2877,13 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Empty">Empty</option>
@@ -3012,13 +3012,13 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Minelaying_Rails">Minelaying Rails</option>
+          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option class="grey" value="Torpedo_Launcher_1">Torpedo Launcher 1</option>
           <option class="grey" value="Torpedo_Launcher_2">Torpedo Launcher 2</option>
           <option class="grey" value="Torpedo_Launcher_3">Torpedo Launcher 3</option>
           <option class="grey" value="Torpedo_Launcher_4">Torpedo Launcher 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Minelaying_Rails">Minelaying Rails</option>
         </select>
         <select class="equipselect" id="slot5">
           <option value="Locked">Locked</option>
@@ -3331,12 +3331,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3347,12 +3347,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3363,12 +3363,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3461,12 +3461,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3477,12 +3477,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3493,12 +3493,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3509,12 +3509,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
         </select>
         <select class="equipselect" id="slot6">
           <option value="Locked">Locked</option>
@@ -3601,12 +3601,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3617,12 +3617,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3633,12 +3633,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3649,12 +3649,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Heavy_Battery_1">Heavy Battery 1</option>
-          <option class="grey" value="Heavy_Battery_2">Heavy Battery 2</option>
-          <option class="grey" value="Heavy_Battery_3">Heavy Battery 3</option>
-          <option class="grey" value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option value="Heavy_Battery_1">Heavy Battery 1</option>
+          <option value="Heavy_Battery_2">Heavy Battery 2</option>
+          <option value="Heavy_Battery_3">Heavy Battery 3</option>
+          <option value="Heavy_Battery_4">Heavy Battery 4</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
           <option value="Secondary_Battery_1">Secondary Battery 1</option>
           <option value="Secondary_Battery_2">Secondary Battery 2</option>
           <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
@@ -3779,12 +3779,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
           <option value="SH_Battery">Super Heavy Battery</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
         </select>
         <select class="equipselect" id="slot7">
           <option value="Empty">Empty</option>
@@ -3792,12 +3792,12 @@ class App extends Component {
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
-          <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
-          <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
-          <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
           <option value="SH_Battery">Super Heavy Battery</option>
+          <option class="grey" value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
+          <option class="grey" value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
+          <option value="Secondary_Battery_1">Secondary Battery 1</option>
+          <option value="Secondary_Battery_2">Secondary Battery 2</option>
+          <option value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
         </select>
 
         <div id="picdiv">
@@ -4153,13 +4153,13 @@ class App extends Component {
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
+          <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
+          <option value="Torpedo_Tubes_2">Torpedo Tubes 2</option>
+          <option value="Torpedo_Tubes_3">Torpedo Tubes 3</option>
+          <option value="Torpedo_Tubes_4">Torpedo Tubes 4</option>
+          <option class="grey" value="Extra_Fuel_Tank">Extra Fuel Tank</option>
           <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
-          <option class="grey" value="Torpedo_Tubes_2">Torpedo Tubes 2</option>
-          <option class="grey" value="Torpedo_Tubes_3">Torpedo Tubes 3</option>
-          <option class="grey" value="Torpedo_Tubes_4">Torpedo Tubes 4</option>
-          <option value="Extra_Fuel_Tank">Extra Fuel Tank</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
@@ -4173,13 +4173,13 @@ class App extends Component {
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
           <option class="grey" value="Minelaying_Tubes">Minelaying Tubes</option>
+          <option value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
+          <option value="Torpedo_Tubes_2">Torpedo Tubes 2</option>
+          <option value="Torpedo_Tubes_3">Torpedo Tubes 3</option>
+          <option value="Torpedo_Tubes_4">Torpedo Tubes 4</option>
+          <option class="grey" value="Extra_Fuel_Tank">Extra Fuel Tank</option>
           <option value="Floatplane_Catapult_1">Floatplane Catapult 1</option>
           <option value="Floatplane_Catapult_2">Floatplane Catapult 2</option>
-          <option class="grey" value="Torpedo_Tubes_1">Torpedo Tubes 1</option>
-          <option class="grey" value="Torpedo_Tubes_2">Torpedo Tubes 2</option>
-          <option class="grey" value="Torpedo_Tubes_3">Torpedo Tubes 3</option>
-          <option class="grey" value="Torpedo_Tubes_4">Torpedo Tubes 4</option>
-          <option value="Extra_Fuel_Tank">Extra Fuel Tank</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Locked">Locked</option>
@@ -4268,8 +4268,8 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
-          <option class="grey" value="Carrier_Armor">Deck Armor</option>
-          <option value="Hangar_Space">Hangar Space</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
         </select>
         <select class="equipselect" id="slot10">
           <option value="Empty">Empty</option>
@@ -4286,14 +4286,14 @@ class App extends Component {
           <option class="grey" value="Radar_4">Radar 4</option>
         </select>
         <select class="equipselect" id="slot12">
-          <option value="Cruiser_Engine_1">Cruiser Engine 1</option>
-          <option value="Cruiser_Engine_2">Cruiser Engine 2</option>
-          <option value="Cruiser_Engine_3">Cruiser Engine 3</option>
-          <option value="Cruiser_Engine_4">Cruiser Engine 4</option>
-          <option class="grey" value="Carrier_Engine_1">Carrier Engine 1</option>
-          <option class="grey" value="Carrier_Engine_2">Carrier Engine 2</option>
-          <option class="grey" value="Carrier_Engine_3">Carrier Engine 3</option>
-          <option class="grey" value="Carrier_Engine_4">Carrier Engine 4</option>
+          <option value="Carrier_Engine_1">Carrier Engine 1</option>
+          <option value="Carrier_Engine_2">Carrier Engine 2</option>
+          <option value="Carrier_Engine_3">Carrier Engine 3</option>
+          <option value="Carrier_Engine_4">Carrier Engine 4</option>
+          <option class="grey" value="Cruiser_Engine_1">Cruiser Engine 1</option>
+          <option class="grey" value="Cruiser_Engine_2">Cruiser Engine 2</option>
+          <option class="grey" value="Cruiser_Engine_3">Cruiser Engine 3</option>
+          <option class="grey" value="Cruiser_Engine_4">Cruiser Engine 4</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -4314,11 +4314,11 @@ class App extends Component {
       <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Locked">Locked</option>
@@ -4350,8 +4350,8 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
-          <option class="grey" value="Carrier_Armor">Deck Armor</option>
-          <option value="Hangar_Space">Hangar Space</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
         </select>
         <select class="equipselect" id="slot10">
           <option value="Empty">Empty</option>
@@ -4368,14 +4368,14 @@ class App extends Component {
           <option class="grey" value="Radar_4">Radar 4</option>
         </select>
         <select class="equipselect" id="slot12">
-          <option value="Heavy_Engine_1">Heavy Engine 1</option>
-          <option value="Heavy_Engine_2">Heavy Engine 2</option>
-          <option value="Heavy_Engine_3">Heavy Engine 3</option>
-          <option value="Heavy_Engine_4">Heavy Engine 4</option>
-          <option class="grey" value="Carrier_Engine_1">Carrier Engine 1</option>
-          <option class="grey" value="Carrier_Engine_2">Carrier Engine 2</option>
-          <option class="grey" value="Carrier_Engine_3">Carrier Engine 3</option>
-          <option class="grey" value="Carrier_Engine_4">Carrier Engine 4</option>
+          <option value="Carrier_Engine_1">Carrier Engine 1</option>
+          <option value="Carrier_Engine_2">Carrier Engine 2</option>
+          <option value="Carrier_Engine_3">Carrier Engine 3</option>
+          <option value="Carrier_Engine_4">Carrier Engine 4</option>
+          <option class="grey" value="Heavy_Engine_1">Heavy Engine 1</option>
+          <option class="grey" value="Heavy_Engine_2">Heavy Engine 2</option>
+          <option class="grey" value="Heavy_Engine_3">Heavy Engine 3</option>
+          <option class="grey" value="Heavy_Engine_4">Heavy Engine 4</option>
         </select>
         <select class="equipselect" id="slot13">
           <option value="Empty">Empty</option>
@@ -4396,11 +4396,11 @@ class App extends Component {
       <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Locked">Locked</option>
@@ -4432,8 +4432,8 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
-          <option class="grey" value="Carrier_Armor">Deck Armor</option>
-          <option value="Hangar_Space">Hangar Space</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
         </select>
         <select class="equipselect" id="slot10">
           <option value="Empty">Empty</option>
@@ -4474,20 +4474,20 @@ class App extends Component {
       <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Locked">Locked</option>
@@ -4516,8 +4516,8 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
-          <option class="grey" value="Carrier_Armor">Deck Armor</option>
-          <option value="Hangar_Space">Hangar Space</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
         </select>
         <select class="equipselect" id="slot10">
           <option value="Empty">Empty</option>
@@ -4558,28 +4558,28 @@ class App extends Component {
       <div class="center nojump">
         <select class="equipselect" id="slot1">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Anti_Air_1">Anti-Air 1</option>
           <option class="grey" value="Anti_Air_2">Anti-Air 2</option>
           <option class="grey" value="Anti_Air_3">Anti-Air 3</option>
           <option class="grey" value="Anti_Air_4">Anti-Air 4</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot2">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot3">
           <option value="Empty">Empty</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
           <option class="grey" value="Secondary_Battery_1">Secondary Battery 1</option>
           <option class="grey" value="Secondary_Battery_2">Secondary Battery 2</option>
           <option class="grey" value="DP_Secondary_Battery">Dual Purpose Secondary Battery</option>
-          <option value="Carrier_Armor">Deck Armor</option>
-          <option class="grey" value="Hangar_Space">Hangar Space</option>
         </select>
         <select class="equipselect" id="slot4">
           <option value="Locked">Locked</option>
@@ -4605,8 +4605,8 @@ class App extends Component {
         </select>
         <select class="equipselect" id="slot9">
           <option value="Empty">Empty</option>
-          <option class="grey" value="Carrier_Armor">Deck Armor</option>
-          <option value="Hangar_Space">Hangar Space</option>
+          <option class="grey" value="Hangar_Space">Hangar Space</option>
+          <option value="Carrier_Armor">Deck Armor</option>
         </select>
         <select class="equipselect" id="slot10">
           <option value="Empty">Empty</option>
