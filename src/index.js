@@ -241,7 +241,7 @@ class App extends Component {
     3500, 1800, 1900, 2000, 2100, 1700, 3500,
     3000, 3300, 3400, 3500, 3600, 5500,
     220, 250, 320, 450, 390,
-    2700, 2700, 2450, 2600, 325
+    2700, 2700, 2450, 2600, 3250
   ];
   
   steel = [
@@ -337,8 +337,8 @@ class App extends Component {
       Heavy_Battery_1:1, Heavy_Battery_2:1, Heavy_Battery_3:1, Heavy_Battery_4:1, SH_Battery:1, 
       Hangar_Space:1,
       Cruiser_Armor_2:1, Cruiser_Armor_3:1, Cruiser_Armor_4:2,
-      Battlecruiser_Armor_2:1, Battlecruiser_Armor_2:1,
-      Battleship_Armor_1:1, Battleship_Armor_2:1, Battleship_Armor_3:1, SH_Armor:2,
+      Battlecruiser_Armor_2:1, Battlecruiser_Armor_3:1,
+      Battleship_Armor_1:1, Battleship_Armor_2:1, Battleship_Armor_3:2, SH_Armor:2,
       Carrier_Armor:1},
     chromium : {Heavy_Battery_4:1, SH_Battery:1,
       Cruiser_Armor_3:1, Cruiser_Armor_4:1,
