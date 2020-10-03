@@ -474,7 +474,7 @@ class App extends Component {
       Fire_Control_1:0.1, Fire_Control_2:0.15, Fire_Control_3:0.2,
       Radar_3:0.05, Radar_4:0.1},
     fuel_consumption : {},
-    surface_visibility : {Trade_Interdiction_Doctrine:{BB:-0.25, BC:-0.25, CL:-0.1},
+    surface_visibility : {Trade_Interdiction_Doctrine:{BB:-0.25, BC:-0.2, CA:-0.1, CL:-0.1},
       Raiding_fleet_Designer:{CV:-0.1, BB:-0.1, BC:-0.1, CA:-0.1, CL:-0.1, DD:-0.1, SS:-0.1}},
     surface_detection : {Fleet_in_Being_Doctrine:{CL:0.1, DD:0.1, SS:0.25},
       Trade_Interdiction_Doctrine:{BB:0.25, BC:0.3, CA:0.3, CL:0.3, SS:0.5},
