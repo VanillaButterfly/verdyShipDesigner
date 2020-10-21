@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/verdyShipDesigner/static/css/main.4ee23e85.chunk.css",
-    "main.js": "/verdyShipDesigner/static/js/main.55ad9071.chunk.js",
-    "main.js.map": "/verdyShipDesigner/static/js/main.55ad9071.chunk.js.map",
+    "main.js": "/verdyShipDesigner/static/js/main.30ca9ea5.chunk.js",
+    "main.js.map": "/verdyShipDesigner/static/js/main.30ca9ea5.chunk.js.map",
     "runtime-main.js": "/verdyShipDesigner/static/js/runtime-main.91dc2313.js",
     "runtime-main.js.map": "/verdyShipDesigner/static/js/runtime-main.91dc2313.js.map",
     "static/js/2.22f60d1f.chunk.js": "/verdyShipDesigner/static/js/2.22f60d1f.chunk.js",
     "static/js/2.22f60d1f.chunk.js.map": "/verdyShipDesigner/static/js/2.22f60d1f.chunk.js.map",
     "index.html": "/verdyShipDesigner/index.html",
-    "precache-manifest.c839f7e39cc6b9c0a1fcc3a44ddc3ff4.js": "/verdyShipDesigner/precache-manifest.c839f7e39cc6b9c0a1fcc3a44ddc3ff4.js",
+    "precache-manifest.7dcac33fe4675b751ba8fe798f2e73b5.js": "/verdyShipDesigner/precache-manifest.7dcac33fe4675b751ba8fe798f2e73b5.js",
     "service-worker.js": "/verdyShipDesigner/service-worker.js",
     "static/css/main.4ee23e85.chunk.css.map": "/verdyShipDesigner/static/css/main.4ee23e85.chunk.css.map",
     "static/js/2.22f60d1f.chunk.js.LICENSE.txt": "/verdyShipDesigner/static/js/2.22f60d1f.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.91dc2313.js",
     "static/js/2.22f60d1f.chunk.js",
     "static/css/main.4ee23e85.chunk.css",
-    "static/js/main.55ad9071.chunk.js"
+    "static/js/main.30ca9ea5.chunk.js"
   ]
 }
