@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/verdyShipDesigner/precache-manifest.81221d03b9001bedde4599a0330edd27.js"
+  "/verdyShipDesigner/precache-manifest.d16a5f7ea15872349fb8cf5b9086329d.js"
 );
 
 self.addEventListener('message', (event) => {
