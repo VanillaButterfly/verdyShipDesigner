@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7edfdf4d61f6dc9d464628ae1e0f6b82",
+    "revision": "23d3d5b620524486f51564b5bd8bc7d9",
     "url": "/verdyShipDesigner/index.html"
   },
   {
