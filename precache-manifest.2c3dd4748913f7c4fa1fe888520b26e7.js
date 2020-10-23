@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23d3d5b620524486f51564b5bd8bc7d9",
+    "revision": "c56ca4c3a0273810476769c01d9252e4",
     "url": "/verdyShipDesigner/index.html"
   },
   {
-    "revision": "75ba2c85baeaa7eefc2b",
+    "revision": "3db451ceeaf1a8183138",
     "url": "/verdyShipDesigner/static/css/main.4ee23e85.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/verdyShipDesigner/static/js/2.22f60d1f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "75ba2c85baeaa7eefc2b",
-    "url": "/verdyShipDesigner/static/js/main.30ca9ea5.chunk.js"
+    "revision": "3db451ceeaf1a8183138",
+    "url": "/verdyShipDesigner/static/js/main.816f3bd3.chunk.js"
   },
   {
     "revision": "bfe550ffcc2520bbd35e",
