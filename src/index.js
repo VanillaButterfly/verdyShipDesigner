@@ -1029,7 +1029,20 @@ class App extends Component {
     document.querySelector("#inputcopy").value = ret
     var copyText = document.querySelector("#inputcopy");
     copyText.select();
+    var textarea = document.createElement('textarea');
+    textarea.textContent = ret;
+    document.body.appendChild(textarea);
+
+    var selection = document.getSelection();
+    var range = document.createRange();
+    
+    range.selectNode(textarea);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
     document.execCommand("copy");
+
+    document.body.removeChild(textarea);
 
     console.log(ret)
   }
