@@ -1048,6 +1048,14 @@ class App extends Component {
 
     var a =
       <div>
+        <div class="title">
+          <br/>
+          <p id="title1">Naval calculator</p>
+          <p id="title2">Hearts of Iron IV 1.9.3</p>
+          <br/>
+        </div>
+        <br/>
+        <br/>
         <div class="hull">
           <select onChange={() => this.swapper()} id="hullselect">
             <option value="0">Early DD Hull</option>
